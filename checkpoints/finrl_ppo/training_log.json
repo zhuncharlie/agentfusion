@@ -1,0 +1,137 @@
+{
+  "AAPL": {
+    "elapsed_sec": 81.90893411636353,
+    "reward_log": [
+      {
+        "timesteps": 6000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 12000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 18000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 24000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 30000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 36000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 42000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 48000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 54000,
+        "episode_reward": 75.15083425620915
+      },
+      {
+        "timesteps": 60000,
+        "episode_reward": 75.15083425620915
+      }
+    ]
+  },
+  "MSFT": {
+    "elapsed_sec": 73.19294691085815,
+    "reward_log": [
+      {
+        "timesteps": 6000,
+        "episode_reward": 15.883226724365413
+      },
+      {
+        "timesteps": 12000,
+        "episode_reward": 14.379225581350546
+      },
+      {
+        "timesteps": 18000,
+        "episode_reward": 43.45081098016848
+      },
+      {
+        "timesteps": 24000,
+        "episode_reward": 43.45081098016848
+      },
+      {
+        "timesteps": 30000,
+        "episode_reward": 0.0
+      },
+      {
+        "timesteps": 36000,
+        "episode_reward": 0.0
+      },
+      {
+        "timesteps": 42000,
+        "episode_reward": 59.35344542781025
+      },
+      {
+        "timesteps": 48000,
+        "episode_reward": 58.109774135061784
+      },
+      {
+        "timesteps": 54000,
+        "episode_reward": 58.109774135061784
+      },
+      {
+        "timesteps": 60000,
+        "episode_reward": 63.00925985738362
+      }
+    ]
+  },
+  "NVDA": {
+    "elapsed_sec": 83.04143238067627,
+    "reward_log": [
+      {
+        "timesteps": 6000,
+        "episode_reward": 67.75517412421881
+      },
+      {
+        "timesteps": 12000,
+        "episode_reward": 135.8956748724963
+      },
+      {
+        "timesteps": 18000,
+        "episode_reward": 135.8956748724963
+      },
+      {
+        "timesteps": 24000,
+        "episode_reward": 135.8956748724963
+      },
+      {
+        "timesteps": 30000,
+        "episode_reward": 135.8956748724963
+      },
+      {
+        "timesteps": 36000,
+        "episode_reward": 141.8048251473487
+      },
+      {
+        "timesteps": 42000,
+        "episode_reward": 135.8956748724963
+      },
+      {
+        "timesteps": 48000,
+        "episode_reward": 135.8956748724963
+      },
+      {
+        "timesteps": 54000,
+        "episode_reward": 135.8956748724963
+      },
+      {
+        "timesteps": 60000,
+        "episode_reward": 135.8956748724963
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+name: update-leaderboard
+
+# Regenerates the README leaderboard table from the already-committed
+# results/main_table.csv. Does not retrain or re-call any LLM API -- gen_leaderboard.py
+# only reads the registry + the CSV, so this is cheap to run on every push to main.
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  leaderboard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install agentfusion
+        run: pip install -e .
+
+      - name: Regenerate leaderboard
+        run: python scripts/gen_leaderboard.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "agentfusion-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git diff --quiet README.md || (git add README.md && git commit -m "chore: update leaderboard [skip ci]" && git push)

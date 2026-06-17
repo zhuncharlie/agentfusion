@@ -1,0 +1,373 @@
+date,ticker,action,confidence,rationale
+2023-01-03,AAPL,HOLD,0.5,Insufficient data to determine trend; wait for confirmation.
+2023-01-04,AAPL,HOLD,0.4,Limited data; no clear trend. Awaiting further confirmation.
+2023-01-05,AAPL,HOLD,0.6,Limited data shows slight decline with low volatility; no clear trend to act.
+2023-01-06,AAPL,HOLD,0.3,One-day gain insufficient; lack of trend data warrants caution.
+2023-01-09,AAPL,HOLD,0.65,"Slight uptick with low volatility, no clear trend; cautious stance."
+2023-01-10,AAPL,BUY,0.65,Positive 5-day momentum with low volatility supports continued upside.
+2023-01-11,AAPL,BUY,0.65,Strong 5-day rally with low volatility; momentum favorable.
+2023-01-12,AAPL,BUY,0.6,"Strong 5d rally, low volatility, slight dip is consolidation."
+2023-01-13,AAPL,BUY,0.65,Positive short-term momentum with low volatility supports buying.
+2023-01-17,AAPL,BUY,0.7,Strong 5-day rally with low volatility; positive momentum.
+2023-01-18,AAPL,HOLD,0.6,Strong uptrend but slight pullback suggests caution.
+2023-01-19,AAPL,HOLD,0.6,Uptrend with low volatility; no strong catalyst to buy or sell.
+2023-01-20,AAPL,BUY,0.85,"Strong uptrend with low volatility, bullish momentum intact."
+2023-01-23,AAPL,BUY,0.7,Strong uptrend and low volatility suggest continued buying momentum.
+2023-01-24,AAPL,BUY,0.82,Strong uptrend with low volatility; positive short-term momentum.
+2023-01-25,AAPL,BUY,0.65,Strong short-term uptrend despite minor pullback; low volatility supports further gains.
+2023-01-26,AAPL,BUY,0.65,Strong short-term momentum with low volatility; positive earnings anticipation.
+2023-01-27,AAPL,BUY,0.68,"Strong uptrend across multiple timeframes with low volatility, suggesting continued bullish momentum."
+2023-01-30,AAPL,BUY,0.65,Recent uptrend intact; one-day dip presents buying opportunity.
+2023-01-31,AAPL,BUY,0.65,Positive momentum across timeframes with low volatility.
+2023-02-01,AAPL,BUY,0.65,Positive momentum with low volatility; short-term uptrend intact.
+2023-02-02,AAPL,HOLD,0.6,"Strong recent gains, but potential overextension suggests caution."
+2023-02-03,AAPL,BUY,0.85,Strong post-earnings momentum with low volatility; uptrend likely to continue.
+2023-02-06,AAPL,BUY,0.65,Short-term dip in strong uptrend; buy on pullback.
+2023-02-07,AAPL,BUY,0.65,Strong short-term momentum with consecutive gains.
+2023-02-08,AAPL,BUY,0.65,Uptrend intact with minor pullback; volatility low; momentum positive.
+2023-02-09,AAPL,BUY,0.65,"10-day momentum strong, short dip offers entry opportunity."
+2023-02-10,AAPL,HOLD,0.4,Mixed short-term signals; 5d decline but 10d gain. Wait for clearer trend.
+2023-02-13,AAPL,HOLD,0.65,Strong 10-day rally but may consolidate; monitor for pullback.
+2023-02-14,AAPL,HOLD,0.65,Short-term pullback after strong rally; wait for confirmation.
+2023-02-15,AAPL,BUY,0.65,Strong uptrend with increasing momentum; moderate volatility supports bullish outlook.
+2023-02-16,AAPL,HOLD,0.6,Mixed signals; short-term dip but medium-term uptrend.
+2023-02-17,AAPL,HOLD,0.6,Mixed short-term signals; low volatility suggests wait for clearer trend.
+2023-02-21,AAPL,SELL,0.55,Sustained decline across multiple periods; negative momentum suggests further downside risk.
+2023-02-22,AAPL,HOLD,0.4,Short-term downtrend persists; awaiting clearer signal.
+2023-02-23,AAPL,HOLD,0.7,Short-term downtrend persists; wait for reversal confirmation.
+2023-02-24,AAPL,HOLD,0.6,Bearish momentum but fundamental support; hold for clarity.
+2023-02-27,AAPL,HOLD,0.6,Recent decline but positive day; wait for confirmation.
+2023-02-28,AAPL,HOLD,0.6,Short-term downtrend; low volatility suggests waiting for clearer signal.
+2023-03-01,AAPL,SELL,0.7,Recent price declines and negative momentum suggest further downside risk.
+2023-03-02,AAPL,HOLD,0.65,Recent downtrend but slight bounce; waiting for clearer direction.
+2023-03-03,AAPL,BUY,0.6,Positive short-term momentum; strong 1-day and 5-day gains.
+2023-03-06,AAPL,BUY,0.65,Recent price surge with moderate volatility suggests bullish continuation.
+2023-03-07,AAPL,BUY,0.65,Short-term uptrend intact; minor dip offers buying opportunity.
+2023-03-08,AAPL,BUY,0.65,Positive short-term momentum with low volatility suggests continued uptrend.
+2023-03-09,AAPL,HOLD,0.6,Short-term dip but uptrend intact; wait for confirmation.
+2023-03-10,AAPL,HOLD,0.6,Short-term weakness but 10-day recovery; volatility moderate. Await clearer trend.
+2023-03-13,AAPL,HOLD,0.6,Mixed short-term signals; bounce but still down over 5 days.
+2023-03-14,AAPL,BUY,0.65,"Positive short-term momentum with low volatility, suggesting trend continuation."
+2023-03-15,AAPL,BUY,0.65,10-day gain with low volatility suggests bullish momentum; buy for continuation.
+2023-03-16,AAPL,BUY,0.82,Strong uptrend with increasing momentum and moderate volatility.
+2023-03-17,AAPL,BUY,0.65,Short-term pullback within strong uptrend; volatility moderate.
+2023-03-20,AAPL,BUY,0.65,Positive momentum with low volatility; uptrend intact.
+2023-03-21,AAPL,BUY,0.7,Positive momentum with low volatility suggests continued upward trend.
+2023-03-22,AAPL,HOLD,0.65,Short-term dip after strong weekly gain; trend intact but caution warranted.
+2023-03-23,AAPL,BUY,0.65,Positive short-term momentum with low volatility suggests continued upside.
+2023-03-24,AAPL,BUY,0.85,Strong short-term gains and low volatility indicate bullish momentum; buy on strength.
+2023-03-27,AAPL,HOLD,0.6,Short-term pullback within uptrend; wait for confirmation.
+2023-03-28,AAPL,HOLD,0.6,Mixed short-term signals; low volatility suggests wait for clearer direction.
+2023-03-29,AAPL,BUY,0.65,Positive short-term momentum and low volatility favor continued upside.
+2023-03-30,AAPL,BUY,0.65,Strong short-term momentum with low volatility suggests continued upside.
+2023-03-31,AAPL,BUY,0.7,"Strong uptrend with low volatility, positive momentum supports buying."
+2023-04-03,AAPL,BUY,0.7,Strong uptrend with low volatility suggests continued buying pressure.
+2023-04-04,AAPL,HOLD,0.7,Positive momentum intact; slight dip offers cautious hold.
+2023-04-05,AAPL,HOLD,0.7,Short-term uptrend intact but today's dip warrants caution.
+2023-04-06,AAPL,BUY,0.65,Positive short-term momentum with low volatility suggests further upside.
+2023-04-10,AAPL,HOLD,0.6,Short-term weakness offsets medium-term gains; wait for clearer directional signal.
+2023-04-11,AAPL,HOLD,0.6,Short-term weakness but medium-term uptrend; wait for clearer signal.
+2023-04-12,AAPL,HOLD,0.65,Mixed signals: short-term weakness but medium-term uptrend intact.
+2023-04-13,AAPL,HOLD,0.65,Strong one-day gain but moderate short-term trend; wait for confirmation.
+2023-04-14,AAPL,HOLD,0.6,"Low volatility, slight uptrend, no clear catalyst; maintain position."
+2023-04-17,AAPL,HOLD,0.65,Mixed short-term gains with low volatility; no clear directional catalyst.
+2023-04-18,AAPL,BUY,0.65,Positive short-term momentum with low volatility suggests continued upward trend.
+2023-04-19,AAPL,BUY,0.65,Steady uptrend with low volatility supports further gains.
+2023-04-20,AAPL,HOLD,0.6,Modest uptrend with minor pullback; neutral volatility suggests waiting for clearer signal.
+2023-04-21,AAPL,HOLD,0.65,Mixed signals: slight short-term weakness but modest 10-day gain; wait for clearer direction.
+2023-04-24,AAPL,HOLD,0.6,"Price consolidates near high, low volatility; wait for catalyst."
+2023-04-25,AAPL,HOLD,0.6,Short-term weakness but medium-term uptrend; wait for clearer signal.
+2023-04-26,AAPL,HOLD,0.6,Short-term dip but medium-term up; low volatility suggests consolidation.
+2023-04-27,AAPL,BUY,0.72,Strong positive momentum across multiple timeframes with manageable volatility.
+2023-04-28,AAPL,BUY,0.65,Uptrend with low volatility; positive momentum.
+2023-05-01,AAPL,BUY,0.65,Uptrend intact with low volatility; slight pullback offers entry.
+2023-05-02,AAPL,HOLD,0.6,Positive medium-term trend but short-term pullback suggests caution.
+2023-05-03,AAPL,BUY,0.65,"Positive 5d momentum, low volatility; minor dip may be entry opportunity."
+2023-05-04,AAPL,HOLD,0.6,"Slight recent decline, low volatility; wait for clearer direction."
+2023-05-05,AAPL,BUY,0.75,"Strong uptrend with accelerating gains; volatility low, supporting bullish momentum."
+2023-05-08,AAPL,BUY,0.65,Positive short-term momentum with low volatility; buy on dips.
+2023-05-09,AAPL,BUY,0.6,Short-term dip amid positive weekly trend; buying opportunity.
+2023-05-10,AAPL,BUY,0.65,Positive momentum with low volatility; buy on strength.
+2023-05-11,AAPL,HOLD,0.6,"Positive short-term trend with low volatility, but recent flat day suggests consolidation."
+2023-05-12,AAPL,HOLD,0.65,Mixed short-term signals; slight dip but positive 10d trend. Await clearer direction.
+2023-05-15,AAPL,HOLD,0.6,Mixed short-term signals; await clearer trend.
+2023-05-16,AAPL,HOLD,0.65,Slight uptrend but flat today; wait for clearer direction.
+2023-05-17,AAPL,BUY,0.65,"Positive 10-day momentum, pullback ended, uptrend likely continue."
+2023-05-18,AAPL,BUY,0.65,Positive short-term momentum with moderate volatility suggests continued upside.
+2023-05-19,AAPL,HOLD,0.6,Mild uptrend with low volatility; no strong buy signal.
+2023-05-22,AAPL,BUY,0.6,Positive short term trend with low volatility; dip offers entry.
+2023-05-23,AAPL,HOLD,0.6,Recent dip but no clear trend; low volatility suggests waiting.
+2023-05-24,AAPL,HOLD,0.6,Mixed short-term action with slight downward bias; low volatility suggests waiting.
+2023-05-25,AAPL,HOLD,0.6,"Recent mixed signals, low volatility, no clear directional bias."
+2023-05-26,AAPL,BUY,0.7,Positive short-term momentum with low volatility suggests gradual uptrend continuation.
+2023-05-30,AAPL,BUY,0.7,Positive short-term momentum with low volatility.
+2023-05-31,AAPL,BUY,0.65,Positive short-term momentum with low volatility suggests continued uptrend.
+2023-06-01,AAPL,BUY,0.65,Strong short-term momentum with low volatility supports bullish outlook.
+2023-06-02,AAPL,BUY,0.7,Positive short-term momentum with low volatility indicates continued uptrend.
+2023-06-05,AAPL,BUY,0.65,Positive short-term trend with low volatility; minor dip offers entry.
+2023-06-06,AAPL,HOLD,0.6,Short-term dip but uptrend intact; wait for clearer signal.
+2023-06-07,AAPL,BUY,0.65,Positive 10-day trend with low volatility suggests minor pullback.
+2023-06-08,AAPL,BUY,0.7,"Strong 10-day uptrend, low volatility, positive momentum."
+2023-06-09,AAPL,HOLD,0.65,10-day uptrend strong but 5-day flat; low volatility suggests pause. Monitor for breakout.
+2023-06-12,AAPL,BUY,0.75,Strong uptrend with low volatility suggests continued momentum.
+2023-06-13,AAPL,BUY,0.6,"Positive trend, low volatility, slight dip entry opportunity."
+2023-06-14,AAPL,BUY,0.65,Positive short-term momentum and low volatility suggest continued uptrend.
+2023-06-15,AAPL,BUY,0.75,Positive momentum with low volatility supports continued upside.
+2023-06-16,AAPL,BUY,0.6,Strong uptrend with minor pullback; short-term momentum intact.
+2023-06-20,AAPL,BUY,0.65,Steady uptrend with low volatility; momentum favors buying.
+2023-06-21,AAPL,BUY,0.75,Positive short-term momentum with low volatility; minor pullback offers entry.
+2023-06-22,AAPL,BUY,0.75,Strong uptrend with low volatility; momentum favors further upside.
+2023-06-23,AAPL,HOLD,0.6,Mixed signals: slight dip but positive short-term trend. Low volatility suggests wait.
+2023-06-26,AAPL,BUY,0.65,Positive trend with low volatility; dip offers entry.
+2023-06-27,AAPL,BUY,0.7,Strong uptrend with low volatility; momentum favors buying.
+2023-06-28,AAPL,BUY,0.7,Strong uptrend with low volatility suggests continued momentum.
+2023-06-29,AAPL,BUY,0.65,"Steady uptrend with low volatility, momentum intact."
+2023-06-30,AAPL,BUY,0.85,Strong upward momentum with low volatility; positive returns across all timeframes suggest continued bullish trend.
+2023-01-03,MSFT,HOLD,0.2,No recent price data to assess trend; holding due to uncertainty.
+2023-01-04,MSFT,HOLD,0.3,Sharp one-day drop; insufficient data for directional bias.
+2023-01-05,MSFT,HOLD,0.6,Single-day drop unclear; low volatility suggests wait for direction.
+2023-01-06,MSFT,HOLD,0.6,Limited data shows minor uptick; no trend clarity. Caution warranted.
+2023-01-09,MSFT,HOLD,0.6,Limited data; positive day but no clear trend.
+2023-01-10,MSFT,HOLD,0.6,Recent 5-day decline with slight bounce; wait for trend confirmation.
+2023-01-11,MSFT,BUY,0.65,Strong 1d and 5d gains with moderate volatility suggest bullish momentum.
+2023-01-12,MSFT,BUY,0.65,Strong 5-day momentum with moderate volatility suggests continued upside.
+2023-01-13,MSFT,BUY,0.7,Strong 5-day gain with low volatility suggests bullish momentum.
+2023-01-17,MSFT,BUY,0.6,Strong 5-day momentum with low volatility suggests continued upside.
+2023-01-18,MSFT,HOLD,0.6,Mixed short-term trends; no clear direction; hold for confirmation.
+2023-01-19,MSFT,HOLD,0.55,Mixed short-term signals; 1d/5d down but 10d up. Wait for clearer trend.
+2023-01-20,MSFT,BUY,0.7,Strong recent momentum and low volatility suggest continued upside.
+2023-01-23,MSFT,BUY,0.65,"Uptrend with low volatility, positive short-term momentum."
+2023-01-24,MSFT,HOLD,0.65,Uptrend intact but short-term pullback; wait for clearer signal.
+2023-01-25,MSFT,HOLD,0.7,Short-term uptrend intact but daily dip suggests caution; waiting for confirmation.
+2023-01-26,MSFT,BUY,0.85,Strong uptrend with low volatility; bullish momentum continues.
+2023-01-27,MSFT,BUY,0.7,"Short-term uptrend with low volatility, positive momentum."
+2023-01-30,MSFT,HOLD,0.6,Mixed signals; 1-day dip but 10-day uptrend intact; wait for clearer direction.
+2023-01-31,MSFT,BUY,0.65,Positive short-term momentum with moderate volatility; uptrend intact.
+2023-02-01,MSFT,BUY,0.65,Strong momentum and trend; consider buying.
+2023-02-02,MSFT,BUY,0.82,"Strong upward momentum across timeframes, above-average volume, bullish trend continuation likely."
+2023-02-03,MSFT,BUY,0.7,"Pullback within strong uptrend, buy on dip."
+2023-02-06,MSFT,HOLD,0.6,Strong weekly gains but short-term overbought; hold for consolidation.
+2023-02-07,MSFT,BUY,0.65,Strong momentum with consistent gains; cautious of overextension but trend favors buying.
+2023-02-08,MSFT,HOLD,0.65,Strong uptrend but short-term overbought; hold for potential pullback.
+2023-02-09,MSFT,HOLD,0.6,Short-term pullback after strong rally; wait for clearer direction.
+2023-02-10,MSFT,BUY,0.6,"Strong 10-day momentum, minor pullback; moderate volatility supports further upside."
+2023-02-13,MSFT,BUY,0.75,Strong upward momentum across multiple timeframes with moderate volatility.
+2023-02-14,MSFT,HOLD,0.65,Strong recent momentum but caution on overbought levels.
+2023-02-15,MSFT,HOLD,0.65,Short-term dip after strong 10-day gain; wait for clearer trend.
+2023-02-16,MSFT,HOLD,0.6,"Short-term decline with low volatility; no clear trend, maintain position."
+2023-02-17,MSFT,HOLD,0.6,Mild pullback with no catalyst; waiting for clearer direction.
+2023-02-21,MSFT,SELL,0.6,Sharp reversal and negative short-term momentum suggest further downside risk.
+2023-02-22,MSFT,HOLD,0.6,Sharp short-term drop but oversold; await stabilization.
+2023-02-23,MSFT,HOLD,0.5,Short-term bounce but still in downtrend. Waiting for confirmation.
+2023-02-24,MSFT,SELL,0.6,Steep multi-day decline suggests persistent selling pressure.
+2023-02-27,MSFT,HOLD,0.6,Short-term downtrend persists; slight bounce not yet reversal.
+2023-02-28,MSFT,HOLD,0.65,Short-term downtrend; waiting for stabilization.
+2023-03-01,MSFT,HOLD,0.6,Steep 10-day decline; wait for stabilization before entry.
+2023-03-02,MSFT,HOLD,0.6,"Short-term bounce but still down on week, volatility moderate. Await clearer trend."
+2023-03-03,MSFT,BUY,0.65,Positive short-term momentum despite slight 10-day dip; moderate volatility suggests entry.
+2023-03-06,MSFT,HOLD,0.6,Mixed short-term trends; recent gains offset by 10-day dip. Holding.
+2023-03-07,MSFT,HOLD,0.6,Mild dip but uptrend intact; no clear catalyst.
+2023-03-08,MSFT,BUY,0.65,Positive short-term momentum with low volatility supports buying.
+2023-03-09,MSFT,HOLD,0.65,Mixed short-term signals; low volatility suggests waiting for clearer direction.
+2023-03-10,MSFT,HOLD,0.6,Short-term dip but low volatility; wait for clearer direction.
+2023-03-13,MSFT,HOLD,0.6,Short-term bounce but 5-day trend negative; lack of 20-day data. Hold for clearer signals.
+2023-03-14,MSFT,BUY,0.7,Positive momentum over multiple timeframes with moderate volatility suggests continued upside.
+2023-03-15,MSFT,BUY,0.7,Strong upward momentum with moderate volatility suggests continued buying.
+2023-03-16,MSFT,BUY,0.7,Strong short-term momentum with moderate volatility.
+2023-03-17,MSFT,HOLD,0.65,Strong recent rally but potential overbought; await pullback for better entry.
+2023-03-20,MSFT,BUY,0.65,Strong short-term uptrend; dip offers entry opportunity.
+2023-03-21,MSFT,BUY,0.65,Strong uptrend and low volatility support further gains.
+2023-03-22,MSFT,BUY,0.7,Strong 5d and 10d gains; minor pullback is buying opportunity.
+2023-03-23,MSFT,BUY,0.82,Strong 10-day momentum with moderate volatility; bullish trend continues.
+2023-03-24,MSFT,HOLD,0.65,Strong 10-day momentum but recent slowing suggests consolidation; wait for clearer direction.
+2023-03-27,MSFT,BUY,0.7,"Strong 10-day momentum, short-term dip attractive entry."
+2023-03-28,MSFT,BUY,0.62,Strong 10-day uptrend with minor pullback; momentum favors continuation.
+2023-03-29,MSFT,BUY,0.75,Strong positive momentum with low volatility suggests continued upside.
+2023-03-30,MSFT,BUY,0.7,Positive momentum with low volatility; short-term uptrend intact.
+2023-03-31,MSFT,BUY,0.7,"Consistent uptrend with low volatility, bullish momentum."
+2023-04-03,MSFT,BUY,0.65,Positive short-term momentum with low volatility; minor dip presents buying opportunity.
+2023-04-04,MSFT,BUY,0.65,Positive momentum with low volatility suggests continued uptrend.
+2023-04-05,MSFT,BUY,0.65,Uptrend intact with minor pullback; volatility low; positive momentum.
+2023-04-06,MSFT,BUY,0.85,"Strong upward momentum with low volatility, indicating bullish trend continuation."
+2023-04-10,MSFT,BUY,0.65,"Positive short-term trend, low volatility supports further upside."
+2023-04-11,MSFT,BUY,0.65,"Short-term dip in uptrend, volatility moderate, bullish bias."
+2023-04-12,MSFT,HOLD,0.55,Mixed short-term signals; 5d decline but 10d uptrend. Await clearer direction.
+2023-04-13,MSFT,BUY,0.7,Positive short-term momentum with low volatility; uptrend intact.
+2023-04-14,MSFT,HOLD,0.65,"Slight pullback after modest gain; low volatility, no clear catalyst."
+2023-04-17,MSFT,HOLD,0.6,"Mixed short-term signals, low volatility suggests waiting for clearer direction."
+2023-04-18,MSFT,HOLD,0.7,Mixed signals: slight pullback but positive short-term trend; volatility moderate.
+2023-04-19,MSFT,HOLD,0.6,Mixed short-term moves with low volatility suggest waiting for clearer direction.
+2023-04-20,MSFT,HOLD,0.6,Mixed short-term signals; pullback but 10d positive. Await clearer direction.
+2023-04-21,MSFT,HOLD,0.65,Short-term negative momentum with low volatility suggests waiting for clearer direction.
+2023-04-24,MSFT,HOLD,0.6,Downward momentum with moderate volatility suggests waiting for a clearer signal.
+2023-04-25,MSFT,HOLD,0.6,Recent declines suggest caution; wait for stabilization.
+2023-04-26,MSFT,BUY,0.85,"Strong one-day surge on above-average volume, uptrend intact, positive momentum."
+2023-04-27,MSFT,BUY,0.85,Strong uptrend with increasing momentum; positive price action suggests continued buying.
+2023-04-28,MSFT,BUY,0.65,Strong uptrend with low volatility suggests momentum continuation.
+2023-05-01,MSFT,BUY,0.65,Minor dip after strong rally; buy on momentum.
+2023-05-02,MSFT,BUY,0.82,"Strong 10-day uptrend, low volatility, minor pullback offers entry."
+2023-05-03,MSFT,BUY,0.75,"Positive medium-term trend, buy dip with low volatility."
+2023-05-04,MSFT,HOLD,0.65,Strong 10-day rally but recent days show consolidation; awaiting further direction.
+2023-05-05,MSFT,BUY,0.75,Strong momentum with controlled volatility; positive earnings outlook.
+2023-05-08,MSFT,HOLD,0.6,Strong uptrend but near-term pullback suggests caution; wait for clearer signal.
+2023-05-09,MSFT,HOLD,0.6,"Strong 10-day rally, slight pullback; wait for better entry."
+2023-05-10,MSFT,BUY,0.7,Strong upward momentum with low volatility suggests continued bullish trend.
+2023-05-11,MSFT,BUY,0.6,Positive short-term momentum with low volatility supports continued uptrend.
+2023-05-12,MSFT,HOLD,0.65,Mixed short-term returns with low volatility; no clear trend direction.
+2023-05-15,MSFT,HOLD,0.6,Stable price action with low volatility; no clear directional signal.
+2023-05-16,MSFT,BUY,0.7,Positive short-term momentum with low volatility; uptrend intact.
+2023-05-17,MSFT,BUY,0.75,Positive short-term momentum with low volatility suggests continued uptrend.
+2023-05-18,MSFT,BUY,0.85,Strong upward momentum with low volatility supports continued bullish trend.
+2023-05-19,MSFT,BUY,0.7,Positive short-term trend with low volatility supports buying.
+2023-05-22,MSFT,BUY,0.65,Steady uptrend with low volatility indicates sustained momentum.
+2023-05-23,MSFT,BUY,0.65,Short-term pullback in persistent uptrend; positive weekly momentum.
+2023-05-24,MSFT,HOLD,0.65,Mixed short-term moves with low volatility; wait for clearer direction.
+2023-05-25,MSFT,BUY,0.8,Strong recent gains with low volatility suggest continued momentum.
+2023-05-26,MSFT,BUY,0.72,Strong upward momentum with low volatility; trend-following signal.
+2023-05-30,MSFT,BUY,0.75,"Strong 5d and 10d gains, low volatility, uptrend intact."
+2023-05-31,MSFT,HOLD,0.6,Uptrend intact but minor pullback; await confirmation.
+2023-06-01,MSFT,BUY,0.75,"Strong upward momentum with low volatility, bullish trend intact."
+2023-06-02,MSFT,BUY,0.75,Positive momentum with low volatility suggests continued uptrend.
+2023-06-05,MSFT,BUY,0.65,Positive momentum with low volatility; sustained uptrend supports long position.
+2023-06-06,MSFT,HOLD,0.65,Short-term uptrend intact but mild daily dip suggests consolidation. Volatility low; wait for clearer direction.
+2023-06-07,MSFT,HOLD,0.55,Short-term pullback but 10-day uptrend intact; wait for clearer direction.
+2023-06-08,MSFT,HOLD,0.6,Mixed short-term signals; awaiting clearer direction.
+2023-06-09,MSFT,HOLD,0.6,Short-term dip but stable; wait for clearer trend.
+2023-06-12,MSFT,HOLD,0.6,One-day bounce positive but short-term trend still weak. Awaiting confirmation.
+2023-06-13,MSFT,HOLD,0.6,Modest gains with low volatility; no clear catalyst.
+2023-06-14,MSFT,BUY,0.75,Strong short-term momentum with positive price changes and moderate volatility.
+2023-06-15,MSFT,BUY,0.75,Strong upward momentum across multiple timeframes; volatility supportive.
+2023-06-16,MSFT,BUY,0.65,Minor pullback within strong uptrend; buy the dip with confidence in tech leader.
+2023-06-20,MSFT,BUY,0.65,"Uptrend intact, minor pullback, strong fundamentals, low volatility."
+2023-06-21,MSFT,HOLD,0.6,Minor declines with moderate volatility; wait for clearer trend.
+2023-06-22,MSFT,BUY,0.65,"Positive momentum across timeframes with low volatility, supportive for further gains."
+2023-06-23,MSFT,HOLD,0.6,Short-term momentum negative despite 10-day gain. Cautious hold.
+2023-06-26,MSFT,HOLD,0.7,5-day drop suggests caution; monitor for support before acting.
+2023-06-27,MSFT,HOLD,0.6,Mixed short-term signals; wait for clearer trend.
+2023-06-28,MSFT,HOLD,0.6,Steady but unremarkable gains; low volatility suggests sideways move.
+2023-06-29,MSFT,HOLD,0.6,Slight declines but low volatility; wait for clearer direction.
+2023-06-30,MSFT,HOLD,0.6,Mixed short-term signals; wait for clearer direction.
+2023-01-03,NVDA,HOLD,0.2,"Insufficient data for analysis, holding is prudent."
+2023-01-04,NVDA,HOLD,0.3,Insufficient data points; only one-day gain observed.
+2023-01-05,NVDA,HOLD,0.3,Limited data; one-day dip with moderate volatility suggests waiting for clearer trend.
+2023-01-06,NVDA,HOLD,0.4,Strong one-day move but insufficient trend data.
+2023-01-09,NVDA,HOLD,0.7,Single-day spike insufficient for directional bias; awaiting trend confirmation.
+2023-01-10,NVDA,BUY,0.65,Strong short-term momentum with moderate volatility.
+2023-01-11,NVDA,BUY,0.65,Strong 5-day rally with moderate volatility suggests bullish momentum.
+2023-01-12,NVDA,HOLD,0.6,"Strong short-term rally, but lack of long-term data suggests caution."
+2023-01-13,NVDA,BUY,0.65,Strong 5-day momentum and positive daily gain suggest continued bullish trend.
+2023-01-17,NVDA,BUY,0.65,Strong momentum and low volatility support continued upside.
+2023-01-18,NVDA,BUY,0.7,"Strong recent momentum, slight dip offers entry; trend remains bullish."
+2023-01-19,NVDA,BUY,0.65,Strong 10-day rally with minor pullback; buy the dip.
+2023-01-20,NVDA,BUY,0.75,Strong momentum with significant gains; bullish trend continues.
+2023-01-23,NVDA,BUY,0.6,"Strong upside momentum, but watch for reversal risk after steep gains."
+2023-01-24,NVDA,BUY,0.65,"Strong uptrend, momentum bullish; slight caution on overextension."
+2023-01-25,NVDA,HOLD,0.7,Strong recent gains but high risk of pullback; maintain position.
+2023-01-26,NVDA,BUY,0.65,Strong momentum across timeframes; volatility supports further upside.
+2023-01-27,NVDA,BUY,0.75,Strong upward momentum with accelerating gains; low volatility suggests stable trend continuation.
+2023-01-30,NVDA,HOLD,0.6,Sharp one-day drop but strong 10-day uptrend; await confirmation.
+2023-01-31,NVDA,BUY,0.7,Strong 10-day rally with moderate volatility suggests bullish momentum.
+2023-02-01,NVDA,BUY,0.85,Strong upward momentum with low volatility; bullish trend continues.
+2023-02-02,NVDA,BUY,0.72,"Strong rally with 10-day gains, high momentum; volatility suggests risk but trend is clear."
+2023-02-03,NVDA,HOLD,0.6,Strong uptrend but short-term pullback; monitor for entry.
+2023-02-06,NVDA,BUY,0.6,Strong short-term momentum; minor pullback offers entry but watch for reversal risk.
+2023-02-07,NVDA,BUY,0.85,"Strong upward momentum with low volatility, bullish trend."
+2023-02-08,NVDA,BUY,0.7,Strong uptrend over past 10 days with low volatility suggests continued momentum.
+2023-02-09,NVDA,BUY,0.6,Strong 10-day momentum with moderate volatility suggests continued bullish trend.
+2023-02-10,NVDA,SELL,0.7,Sharp decline on high volatility; potential trend reversal.
+2023-02-13,NVDA,BUY,0.7,"Strong upward momentum over 10 days, moderate volatility suggests continued bullish bias."
+2023-02-14,NVDA,BUY,0.85,Strong upward momentum with moderate volatility suggests continued bullish trend.
+2023-02-15,NVDA,HOLD,0.6,Short-term uptrend intact but daily dip suggests pause. Await clearer direction.
+2023-02-16,NVDA,HOLD,0.6,Sharp one-day decline offsets modest 10-day gain; await clearer direction.
+2023-02-17,NVDA,BUY,0.6,Short-term uptrend intact; buying dip with moderate volatility.
+2023-02-21,NVDA,HOLD,0.4,Recent negative price action suggests caution; no clear reversal yet.
+2023-02-22,NVDA,HOLD,0.6,Sharp 10-day decline but small bounce; wait for trend confirmation.
+2023-02-23,NVDA,BUY,0.7,"Strong one-day breakout on high volume, bullish momentum."
+2023-02-24,NVDA,BUY,0.6,Uptrend intact despite pullback; moderate volatility offers entry opportunity.
+2023-02-27,NVDA,BUY,0.85,Strong uptrend with increasing volume and momentum.
+2023-02-28,NVDA,BUY,0.65,Strong uptrend with minor pullback; volatility moderate; momentum favors buying.
+2023-03-01,NVDA,HOLD,0.6,Short-term pullback after strong rally; wait for clearer trend.
+2023-03-02,NVDA,HOLD,0.6,Mixed price action; wait for clearer direction.
+2023-03-03,NVDA,HOLD,0.65,Strong short-term gains but moderate volatility suggests caution.
+2023-03-06,NVDA,HOLD,0.6,Strong rally paused; wait for confirmation of support before adding.
+2023-03-07,NVDA,BUY,0.7,Strong uptrend with dip as profit-taking; buy on pullback.
+2023-03-08,NVDA,BUY,0.8,Strong momentum across timeframes; volatility supports continued uptrend.
+2023-03-09,NVDA,HOLD,0.65,Mixed short-term signals; 1d drop but 5d positive; moderate volatility suggests wait.
+2023-03-10,NVDA,HOLD,0.5,"Short-term negative momentum, but no clear direction; wait for confirmation."
+2023-03-13,NVDA,HOLD,0.6,Recent price dip with low volatility; awaiting catalyst.
+2023-03-14,NVDA,BUY,0.65,"Positive momentum across timeframes, strong 1-day surge, moderate volatility supports continued upside."
+2023-03-15,NVDA,BUY,0.65,"Strong 10-day momentum, moderate volatility, bullish short-term trend."
+2023-03-16,NVDA,BUY,0.85,Strong momentum with accelerating gains and low volatility suggests continued upside.
+2023-03-17,NVDA,BUY,0.6,"Strong gains over 5 and 10 days, positive momentum."
+2023-03-20,NVDA,HOLD,0.65,Strong recent gains but no 20d data; wait for consolidation or breakout confirmation.
+2023-03-21,NVDA,HOLD,0.6,Strong uptrend but short-term overbought; await pullback.
+2023-03-22,NVDA,BUY,0.65,Strong recent momentum with low volatility suggests continued uptrend.
+2023-03-23,NVDA,BUY,0.85,Strong momentum and tech sector tailwinds justify buying.
+2023-03-24,NVDA,BUY,0.7,"Strong 10-day uptrend, small pullback offers entry."
+2023-03-27,NVDA,BUY,0.65,Strong 10-day gains with mild dip; momentum remains bullish.
+2023-03-28,NVDA,BUY,0.7,"10-day uptrend strong, slight dip may be entry opportunity."
+2023-03-29,NVDA,BUY,0.65,"Strong 10-day gain, low volatility, bullish momentum suggests further upside."
+2023-03-30,NVDA,BUY,0.65,"Positive short-term momentum, strong gains in last 10 days, buy on strength."
+2023-03-31,NVDA,BUY,0.7,Strong recent gains with low volatility indicate bullish momentum; buy on strength.
+2023-04-03,NVDA,BUY,0.65,"Positive momentum and low volatility suggest continued upside, but monitor resistance."
+2023-04-04,NVDA,HOLD,0.6,Short-term uptrend intact but pullback warrants caution; hold for clearer signal.
+2023-04-05,NVDA,HOLD,0.65,Short-term dip but medium-term uptrend intact. Wait for confirmation.
+2023-04-06,NVDA,HOLD,0.55,Mixed short-term bounce but medium-term downtrend; wait for clearer signal.
+2023-04-10,NVDA,HOLD,0.6,Mixed short-term signals; 1d up but 5d down. Awaiting clearer trend.
+2023-04-11,NVDA,HOLD,0.35,Mixed short-term signals: negative 1d/5d but positive 10d; low volatility suggests wait.
+2023-04-12,NVDA,HOLD,0.4,Short-term weakness with mixed signals; await clearer direction.
+2023-04-13,NVDA,HOLD,0.5,Short-term weakness but low volatility; wait for clearer direction.
+2023-04-14,NVDA,BUY,0.6,Daily bounce amid short-term pullback; AI demand supports long-term growth.
+2023-04-17,NVDA,HOLD,0.6,Short-term downtrend with a small bounce; wait for confirmation.
+2023-04-18,NVDA,HOLD,0.6,Short-term up but 10-day down. Mixed momentum suggests waiting for clearer trend.
+2023-04-19,NVDA,BUY,0.85,Strong 5-day momentum and low volatility suggest bullish continuation.
+2023-04-20,NVDA,BUY,0.6,Short-term uptrend intact; dip offers entry point.
+2023-04-21,NVDA,HOLD,0.6,Mild uptrend with low volatility; no clear catalyst for strong move.
+2023-04-24,NVDA,HOLD,0.6,Consolidating with slight negative bias; low volatility suggests waiting for clearer direction.
+2023-04-25,NVDA,SELL,0.65,Short-term downtrend with accelerating decline; no reversal signals.
+2023-04-26,NVDA,HOLD,0.6,One-day bounce but weekly decline; mixed signals suggest wait for clearer trend.
+2023-04-27,NVDA,HOLD,0.6,Modest uptrend with low volatility; awaiting stronger signals.
+2023-04-28,NVDA,BUY,0.7,Positive short-term momentum with moderate volatility; uptrend continues.
+2023-05-01,NVDA,BUY,0.65,Strong momentum across multiple timeframes with moderate volatility suggests continued uptrend.
+2023-05-02,NVDA,BUY,0.65,"5-day uptrend intact, pullback offers entry. Volatility manageable."
+2023-05-03,NVDA,HOLD,0.6,Short-term dip amid positive weekly trend; wait for better entry.
+2023-05-04,NVDA,HOLD,0.6,"Short-term dip, but medium-term uptrend; wait for clearer signal."
+2023-05-05,NVDA,BUY,0.75,Strong recent momentum and positive price action suggest continued upside.
+2023-05-08,NVDA,BUY,0.7,Strong short-term momentum and upward trend.
+2023-05-09,NVDA,BUY,0.7,Positive mid-term momentum despite short-term dip; strong fundamentals.
+2023-05-10,NVDA,BUY,0.72,"Strong uptrend with positive 5d and 10d momentum, moderate volatility supports buying."
+2023-05-11,NVDA,BUY,0.65,Short-term pullback within uptrend; positive momentum offset by modest dip.
+2023-05-12,NVDA,HOLD,0.6,Mixed short-term trends; wait for clearer signal.
+2023-05-15,NVDA,HOLD,0.55,Mixed short-term signals; daily bounce offsets weekly dip. Need more data.
+2023-05-16,NVDA,BUY,0.7,Steady gains and low volatility suggest continued upward trend.
+2023-05-17,NVDA,BUY,0.65,Strong short-term momentum across multiple timeframes; moderate volatility supports continued upside.
+2023-05-18,NVDA,BUY,0.8,Strong upward momentum with increasing volume and low volatility suggests continued bullish trend.
+2023-05-19,NVDA,BUY,0.65,Strong uptrend with healthy pullback; high volatility warrants caution but trend intact.
+2023-05-22,NVDA,BUY,0.7,Positive short-term momentum despite minor dip; low volatility supports continued uptrend.
+2023-05-23,NVDA,BUY,0.65,Short-term uptrend intact despite 1d dip; buy pullback.
+2023-05-24,NVDA,BUY,0.65,Positive 5d/10d momentum and moderate volatility suggest continued uptrend.
+2023-05-25,NVDA,HOLD,0.6,Massive surge with high volatility; wait for pullback.
+2023-05-26,NVDA,BUY,0.7,Strong momentum and AI catalyst; high volatility suggests potential for further gains.
+2023-05-30,NVDA,BUY,0.6,"Strong momentum and earnings beat, but high volatility warrants caution."
+2023-05-31,NVDA,HOLD,0.6,Sharp drop after strong rally; high volatility suggests wait for confirmation.
+2023-06-01,NVDA,HOLD,0.6,"Sharp rally suggests momentum, but risk of mean reversion high."
+2023-06-02,NVDA,BUY,0.65,Strong 10-day rally with minor pullback; high volatility but trend intact.
+2023-06-05,NVDA,HOLD,0.6,Strong uptrend with slight pullback; high volatility warrants caution.
+2023-06-06,NVDA,HOLD,0.6,Short-term pullback after strong run; wait for clearer direction.
+2023-06-07,NVDA,HOLD,0.65,Sharp pullback after strong rally; wait for support confirmation.
+2023-06-08,NVDA,BUY,0.65,Strong 10-day rally with bullish AI narrative; pullback offers entry opportunity.
+2023-06-09,NVDA,BUY,0.62,"Positive 10-day trend, short-term dip provides entry opportunity."
+2023-06-12,NVDA,BUY,0.65,Positive short-term momentum with moderate volatility; tech sector strong.
+2023-06-13,NVDA,BUY,0.7,Strong momentum with gains across all timeframes; bullish trend intact.
+2023-06-14,NVDA,BUY,0.65,Strong uptrend across multiple timeframes.
+2023-06-15,NVDA,BUY,0.65,Strong short-term uptrend; slight pullback offers entry. Monitor volatility.
+2023-06-16,NVDA,BUY,0.75,Strong upward momentum with low volatility suggests continued bullish trend.
+2023-06-20,NVDA,BUY,0.75,Strong uptrend with robust momentum; bullish signals dominate.
+2023-06-21,NVDA,BUY,0.65,"Strong medium-term uptrend, dip offers entry opportunity."
+2023-06-22,NVDA,HOLD,0.65,"Momentum bullish but short-term overextended, hold for better entry."
+2023-06-23,NVDA,BUY,0.65,Minor pullback after strong 10-day gain; AI sector bullish
+2023-06-26,NVDA,HOLD,0.6,Short-term pullback amid long-term uptrend; waiting for confirmation.
+2023-06-27,NVDA,HOLD,0.6,Mixed short-term signals; one-day bounce but 5-day decline. Await clearer trend.
+2023-06-28,NVDA,HOLD,0.6,Mixed short-term signals; awaiting clearer direction.
+2023-06-29,NVDA,HOLD,0.6,Recent weakness; awaiting clear direction.
+2023-06-30,NVDA,HOLD,0.6,Strong bounce but mixed near-term trend; await confirmation.

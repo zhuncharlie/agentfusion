@@ -1,0 +1,32 @@
+{
+  "AAPL": {
+    "agreement_rate": 0.4032258064516129,
+    "n_agree_days": 50,
+    "n_disagree_days": 74,
+    "mean_return_agree": -0.0007921425460747278,
+    "mean_return_disagree": 0.006615732529085364,
+    "t_stat": -3.264722098116067,
+    "p_value": 0.001461324023090555,
+    "note": "exploratory, not confirmatory (small n, no multiple-comparison or clustered-SE correction)"
+  },
+  "MSFT": {
+    "agreement_rate": 0.47580645161290325,
+    "n_agree_days": 59,
+    "n_disagree_days": 65,
+    "mean_return_agree": -0.0031762029664445476,
+    "mean_return_disagree": 0.008602087405572284,
+    "t_stat": -3.941692507868534,
+    "p_value": 0.0001448280569427181,
+    "note": "exploratory, not confirmatory (small n, no multiple-comparison or clustered-SE correction)"
+  },
+  "NVDA": {
+    "agreement_rate": 0.4032258064516129,
+    "n_agree_days": 50,
+    "n_disagree_days": 74,
+    "mean_return_agree": 0.0029715330896962254,
+    "mean_return_disagree": 0.013730015412163359,
+    "t_stat": -1.5223777215048913,
+    "p_value": 0.13182175080854416,
+    "note": "exploratory, not confirmatory (small n, no multiple-comparison or clustered-SE correction)"
+  }
+}

@@ -1,0 +1,19 @@
+# Personal Claude Code settings (contains secrets like API tokens)
+.claude/settings.local.json
+
+# Agent registry output (auto-generated)
+agent-registry/
+
+# Python
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+*.egg-info/
+
+# ARIS-internal research planning/tooling -- not part of the public AgentFusion project
+/refine-logs/
+/CLAUDE.md
+/MANIFEST.md
+/.aris/
+/.claude/

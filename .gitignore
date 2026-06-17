@@ -8,8 +8,17 @@ agent-registry/
 __pycache__/
 *.pyc
 .env
+.env.*
 .pytest_cache/
 *.egg-info/
+
+# Secrets -- never commit API keys/credentials
+*.key
+*.pem
+secrets.yaml
+secrets.yml
+config/secrets*
+credentials.json
 
 # ARIS-internal research planning/tooling -- not part of the public AgentFusion project
 /refine-logs/

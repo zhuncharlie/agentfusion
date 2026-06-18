@@ -8,12 +8,6 @@ from pathlib import Path
 
 import pandas as pd
 
-import agentfusion.agents.buy_hold  # noqa: F401
-import agentfusion.agents.ensemble  # noqa: F401
-import agentfusion.agents.finrl_ppo  # noqa: F401
-import agentfusion.agents.trading_agents  # noqa: F401
-from agentfusion.registry import OptimizerRegistry
-
 RESULTS_PATH = Path("results/main_table.csv")
 README_PATH = Path("README.md")
 START_MARK = "<!-- LEADERBOARD:START -->"
@@ -21,17 +15,15 @@ END_MARK = "<!-- LEADERBOARD:END -->"
 
 
 def build_table() -> str:
+    # Reads only main_table.csv -- deliberately doesn't import the agent modules (which
+    # would pull in stable_baselines3/requests) just to enumerate Registry names, so this
+    # script (and the CI job that runs it on every push) only needs pandas.
     table = pd.read_csv(RESULTS_PATH)
-    registered = set(OptimizerRegistry.list())
-
     avg = table.groupby("system")[["sharpe", "return", "mdd", "calmar", "win_rate"]].mean()
     today = datetime.date.today().isoformat()
 
     lines = ["| Agent | Sharpe | Return | MDD | Calmar | Last updated |", "|---|---|---|---|---|---|"]
-    for system in sorted(registered):
-        if system not in avg.index:
-            lines.append(f"| `{system}` | — | — | — | — | no results yet |")
-            continue
+    for system in sorted(avg.index):
         row = avg.loc[system]
         sharpe = f"{row['sharpe']:.3f}" if pd.notna(row["sharpe"]) else "— (no trades)"
         calmar = f"{row['calmar']:.3f}" if pd.notna(row["calmar"]) else "—"

@@ -1,0 +1,18 @@
+{
+  "task_id": "portfolio_2024q1",
+  "description": "5-stock US mega-cap portfolio, 2024-Q1 (60 trading days)",
+  "tickers": ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN"],
+  "data_dir": "data/raw",
+  "train_start": "2020-01-01",
+  "train_end":   "2022-12-31",
+  "start":       "2024-01-01",
+  "end":         "2024-03-31",
+  "initial_capital": 100000,
+  "transaction_cost_pct": 0.001,
+  "question": "Given OHLCV data for AAPL, MSFT, NVDA, GOOGL, and AMZN from 2024-01-01 to 2024-03-31, how should a portfolio be allocated across these 5 stocks and cash? Report per-day allocations and overall risk-adjusted performance.",
+  "notes": [
+    "FinRL: portfolio weights (continuous actions), Sharpe/MDD/Calmar/turnover",
+    "TradingAgents: per-(ticker,date) signal (BUY/HOLD/SELL) with analyst conclusions",
+    "Comparison: signal consistency heatmap, top-10 divergence days"
+  ]
+}

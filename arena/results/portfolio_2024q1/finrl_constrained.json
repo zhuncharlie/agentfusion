@@ -1,0 +1,1308 @@
+{
+  "project": "FinRL_constrained",
+  "task_id": "portfolio_2024q1",
+  "native_output": {
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "GOOGL",
+      "AMZN"
+    ],
+    "train_period": [
+      "2020-01-01",
+      "2022-12-31"
+    ],
+    "test_period": [
+      "2024-01-01",
+      "2024-03-31"
+    ],
+    "total_timesteps": 50000,
+    "constrained": true,
+    "account_memory": [
+      {
+        "date": "2024-01-02",
+        "account_value": 100000.0
+      },
+      {
+        "date": "2024-01-03",
+        "account_value": 100012.41118287659
+      },
+      {
+        "date": "2024-01-04",
+        "account_value": 99636.22014126588
+      },
+      {
+        "date": "2024-01-05",
+        "account_value": 99477.27165739442
+      },
+      {
+        "date": "2024-01-08",
+        "account_value": 100409.7949045868
+      },
+      {
+        "date": "2024-01-09",
+        "account_value": 100838.1137946625
+      },
+      {
+        "date": "2024-01-10",
+        "account_value": 101220.15317836001
+      },
+      {
+        "date": "2024-01-11",
+        "account_value": 101111.28421199038
+      },
+      {
+        "date": "2024-01-12",
+        "account_value": 101272.54896144106
+      },
+      {
+        "date": "2024-01-16",
+        "account_value": 100929.05915217593
+      },
+      {
+        "date": "2024-01-17",
+        "account_value": 100561.97850665286
+      },
+      {
+        "date": "2024-01-18",
+        "account_value": 101970.34176158145
+      },
+      {
+        "date": "2024-01-19",
+        "account_value": 103083.65214060977
+      },
+      {
+        "date": "2024-01-22",
+        "account_value": 103378.36268138126
+      },
+      {
+        "date": "2024-01-23",
+        "account_value": 103818.84369944767
+      },
+      {
+        "date": "2024-01-24",
+        "account_value": 104071.53823374942
+      },
+      {
+        "date": "2024-01-25",
+        "account_value": 104712.10581492618
+      },
+      {
+        "date": "2024-01-26",
+        "account_value": 104496.68378733829
+      },
+      {
+        "date": "2024-01-29",
+        "account_value": 104673.26861094669
+      },
+      {
+        "date": "2024-01-30",
+        "account_value": 103622.15709971622
+      },
+      {
+        "date": "2024-01-31",
+        "account_value": 100532.21401634219
+      },
+      {
+        "date": "2024-02-01",
+        "account_value": 101170.64567222598
+      },
+      {
+        "date": "2024-02-02",
+        "account_value": 101271.10851707461
+      },
+      {
+        "date": "2024-02-05",
+        "account_value": 101858.06892051699
+      },
+      {
+        "date": "2024-02-06",
+        "account_value": 102217.59618797305
+      },
+      {
+        "date": "2024-02-07",
+        "account_value": 102551.19813194277
+      },
+      {
+        "date": "2024-02-08",
+        "account_value": 102452.26388206484
+      },
+      {
+        "date": "2024-02-09",
+        "account_value": 103256.45698204043
+      },
+      {
+        "date": "2024-02-12",
+        "account_value": 102653.36434593203
+      },
+      {
+        "date": "2024-02-13",
+        "account_value": 101780.94576683047
+      },
+      {
+        "date": "2024-02-14",
+        "account_value": 101809.03228416445
+      },
+      {
+        "date": "2024-02-15",
+        "account_value": 101066.67641868594
+      },
+      {
+        "date": "2024-02-16",
+        "account_value": 100317.5165981293
+      },
+      {
+        "date": "2024-02-20",
+        "account_value": 100324.93877830508
+      },
+      {
+        "date": "2024-02-21",
+        "account_value": 100763.85802879336
+      },
+      {
+        "date": "2024-02-22",
+        "account_value": 101440.14895286562
+      },
+      {
+        "date": "2024-02-23",
+        "account_value": 101105.7996639252
+      },
+      {
+        "date": "2024-02-26",
+        "account_value": 99481.15626182558
+      },
+      {
+        "date": "2024-02-27",
+        "account_value": 100011.16618003848
+      },
+      {
+        "date": "2024-02-28",
+        "account_value": 99263.46830406191
+      },
+      {
+        "date": "2024-02-29",
+        "account_value": 99608.32340660098
+      },
+      {
+        "date": "2024-03-01",
+        "account_value": 99138.94532432558
+      },
+      {
+        "date": "2024-03-04",
+        "account_value": 97554.76182212832
+      },
+      {
+        "date": "2024-03-05",
+        "account_value": 96577.29674349978
+      },
+      {
+        "date": "2024-03-06",
+        "account_value": 96128.12457760621
+      },
+      {
+        "date": "2024-03-07",
+        "account_value": 96760.48587521364
+      },
+      {
+        "date": "2024-03-08",
+        "account_value": 97282.26736032107
+      },
+      {
+        "date": "2024-03-11",
+        "account_value": 98123.32235299685
+      },
+      {
+        "date": "2024-03-12",
+        "account_value": 98387.35914193728
+      },
+      {
+        "date": "2024-03-13",
+        "account_value": 98310.25300180056
+      },
+      {
+        "date": "2024-03-14",
+        "account_value": 99357.31361277774
+      },
+      {
+        "date": "2024-03-15",
+        "account_value": 98871.2545154877
+      },
+      {
+        "date": "2024-03-18",
+        "account_value": 100484.62306101993
+      },
+      {
+        "date": "2024-03-19",
+        "account_value": 100750.96482965091
+      },
+      {
+        "date": "2024-03-20",
+        "account_value": 101574.30603143314
+      },
+      {
+        "date": "2024-03-21",
+        "account_value": 100059.7703716431
+      },
+      {
+        "date": "2024-03-22",
+        "account_value": 100912.58079078677
+      },
+      {
+        "date": "2024-03-25",
+        "account_value": 100508.47496473696
+      },
+      {
+        "date": "2024-03-26",
+        "account_value": 100438.82634974673
+      },
+      {
+        "date": "2024-03-27",
+        "account_value": 101120.46871940616
+      },
+      {
+        "date": "2024-03-28",
+        "account_value": 100809.2995757294
+      }
+    ],
+    "actions_memory": [
+      {
+        "date": "2024-01-02",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 59,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-03",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 59,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-04",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 59,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-05",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 44,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-08",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-09",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-10",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-11",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-12",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-16",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-17",
+        "AAPL": 15,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-18",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-19",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-22",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-23",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-24",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-25",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-26",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-29",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-30",
+        "AAPL": 2,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-01-31",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-01",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-02",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-05",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-06",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-07",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-08",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-09",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-12",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-13",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-14",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-15",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-16",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-20",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-21",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-22",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-23",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-26",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-27",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-28",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-02-29",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-01",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-04",
+        "AAPL": 1,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-05",
+        "AAPL": 4,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-06",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-07",
+        "AAPL": 1,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-08",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-11",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-12",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-13",
+        "AAPL": 1,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-14",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-15",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-18",
+        "AAPL": 1,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-19",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-20",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-21",
+        "AAPL": 1,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-22",
+        "AAPL": 1,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-25",
+        "AAPL": 1,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-26",
+        "AAPL": 1,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      },
+      {
+        "date": "2024-03-27",
+        "AAPL": 0,
+        "AMZN": 0,
+        "GOOGL": 0,
+        "MSFT": 0,
+        "NVDA": 0
+      }
+    ],
+    "daily_weight_matrix": [
+      {
+        "date": "2024-01-02",
+        "AAPL": 0.0275,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.0808,
+        "AMZN": 0.0,
+        "cash": 0.8917
+      },
+      {
+        "date": "2024-01-03",
+        "AAPL": 0.0546,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.1625,
+        "AMZN": 0.0,
+        "cash": 0.7829
+      },
+      {
+        "date": "2024-01-04",
+        "AAPL": 0.0812,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.2402,
+        "AMZN": 0.0,
+        "cash": 0.6786
+      },
+      {
+        "date": "2024-01-05",
+        "AAPL": 0.1081,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.2989,
+        "AMZN": 0.0,
+        "cash": 0.5931
+      },
+      {
+        "date": "2024-01-08",
+        "AAPL": 0.1371,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3029,
+        "AMZN": 0.0,
+        "cash": 0.5601
+      },
+      {
+        "date": "2024-01-09",
+        "AAPL": 0.1634,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3062,
+        "AMZN": 0.0,
+        "cash": 0.5304
+      },
+      {
+        "date": "2024-01-10",
+        "AAPL": 0.191,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3079,
+        "AMZN": 0.0,
+        "cash": 0.5011
+      },
+      {
+        "date": "2024-01-11",
+        "AAPL": 0.2178,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3078,
+        "AMZN": 0.0,
+        "cash": 0.4744
+      },
+      {
+        "date": "2024-01-12",
+        "AAPL": 0.2451,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3086,
+        "AMZN": 0.0,
+        "cash": 0.4464
+      },
+      {
+        "date": "2024-01-16",
+        "AAPL": 0.2699,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3093,
+        "AMZN": 0.0,
+        "cash": 0.4209
+      },
+      {
+        "date": "2024-01-17",
+        "AAPL": 0.2964,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3082,
+        "AMZN": 0.0,
+        "cash": 0.3954
+      },
+      {
+        "date": "2024-01-18",
+        "AAPL": 0.3018,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3082,
+        "AMZN": 0.0,
+        "cash": 0.39
+      },
+      {
+        "date": "2024-01-19",
+        "AAPL": 0.3032,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3111,
+        "AMZN": 0.0,
+        "cash": 0.3857
+      },
+      {
+        "date": "2024-01-22",
+        "AAPL": 0.306,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3094,
+        "AMZN": 0.0,
+        "cash": 0.3846
+      },
+      {
+        "date": "2024-01-23",
+        "AAPL": 0.3067,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3103,
+        "AMZN": 0.0,
+        "cash": 0.383
+      },
+      {
+        "date": "2024-01-24",
+        "AAPL": 0.3049,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.313,
+        "AMZN": 0.0,
+        "cash": 0.3821
+      },
+      {
+        "date": "2024-01-25",
+        "AAPL": 0.3025,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3177,
+        "AMZN": 0.0,
+        "cash": 0.3797
+      },
+      {
+        "date": "2024-01-26",
+        "AAPL": 0.3004,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.319,
+        "AMZN": 0.0,
+        "cash": 0.3805
+      },
+      {
+        "date": "2024-01-29",
+        "AAPL": 0.2988,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3213,
+        "AMZN": 0.0,
+        "cash": 0.3799
+      },
+      {
+        "date": "2024-01-30",
+        "AAPL": 0.2997,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3202,
+        "AMZN": 0.0,
+        "cash": 0.3802
+      },
+      {
+        "date": "2024-01-31",
+        "AAPL": 0.3029,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3053,
+        "AMZN": 0.0,
+        "cash": 0.3918
+      },
+      {
+        "date": "2024-02-01",
+        "AAPL": 0.305,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3056,
+        "AMZN": 0.0,
+        "cash": 0.3894
+      },
+      {
+        "date": "2024-02-02",
+        "AAPL": 0.303,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.308,
+        "AMZN": 0.0,
+        "cash": 0.389
+      },
+      {
+        "date": "2024-02-05",
+        "AAPL": 0.3043,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.309,
+        "AMZN": 0.0,
+        "cash": 0.3867
+      },
+      {
+        "date": "2024-02-06",
+        "AAPL": 0.3058,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3088,
+        "AMZN": 0.0,
+        "cash": 0.3854
+      },
+      {
+        "date": "2024-02-07",
+        "AAPL": 0.305,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3109,
+        "AMZN": 0.0,
+        "cash": 0.3841
+      },
+      {
+        "date": "2024-02-08",
+        "AAPL": 0.3035,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.312,
+        "AMZN": 0.0,
+        "cash": 0.3845
+      },
+      {
+        "date": "2024-02-09",
+        "AAPL": 0.3024,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3161,
+        "AMZN": 0.0,
+        "cash": 0.3815
+      },
+      {
+        "date": "2024-02-12",
+        "AAPL": 0.3014,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3148,
+        "AMZN": 0.0,
+        "cash": 0.3837
+      },
+      {
+        "date": "2024-02-13",
+        "AAPL": 0.3006,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3124,
+        "AMZN": 0.0,
+        "cash": 0.387
+      },
+      {
+        "date": "2024-02-14",
+        "AAPL": 0.2991,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.314,
+        "AMZN": 0.0,
+        "cash": 0.3869
+      },
+      {
+        "date": "2024-02-15",
+        "AAPL": 0.3008,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3094,
+        "AMZN": 0.0,
+        "cash": 0.3898
+      },
+      {
+        "date": "2024-02-16",
+        "AAPL": 0.3005,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3068,
+        "AMZN": 0.0,
+        "cash": 0.3927
+      },
+      {
+        "date": "2024-02-20",
+        "AAPL": 0.2992,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3081,
+        "AMZN": 0.0,
+        "cash": 0.3926
+      },
+      {
+        "date": "2024-02-21",
+        "AAPL": 0.2992,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3099,
+        "AMZN": 0.0,
+        "cash": 0.3909
+      },
+      {
+        "date": "2024-02-22",
+        "AAPL": 0.3005,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3112,
+        "AMZN": 0.0,
+        "cash": 0.3883
+      },
+      {
+        "date": "2024-02-23",
+        "AAPL": 0.2985,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3119,
+        "AMZN": 0.0,
+        "cash": 0.3896
+      },
+      {
+        "date": "2024-02-26",
+        "AAPL": 0.3011,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3029,
+        "AMZN": 0.0,
+        "cash": 0.396
+      },
+      {
+        "date": "2024-02-27",
+        "AAPL": 0.3019,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3042,
+        "AMZN": 0.0,
+        "cash": 0.3939
+      },
+      {
+        "date": "2024-02-28",
+        "AAPL": 0.3022,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.301,
+        "AMZN": 0.0,
+        "cash": 0.3968
+      },
+      {
+        "date": "2024-02-29",
+        "AAPL": 0.3,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3045,
+        "AMZN": 0.0,
+        "cash": 0.3955
+      },
+      {
+        "date": "2024-03-01",
+        "AAPL": 0.2996,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.303,
+        "AMZN": 0.0,
+        "cash": 0.3973
+      },
+      {
+        "date": "2024-03-04",
+        "AAPL": 0.2985,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.2994,
+        "AMZN": 0.0,
+        "cash": 0.402
+      },
+      {
+        "date": "2024-03-05",
+        "AAPL": 0.3,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3009,
+        "AMZN": 0.0,
+        "cash": 0.3991
+      },
+      {
+        "date": "2024-03-06",
+        "AAPL": 0.2996,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.2994,
+        "AMZN": 0.0,
+        "cash": 0.401
+      },
+      {
+        "date": "2024-03-07",
+        "AAPL": 0.2992,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3042,
+        "AMZN": 0.0,
+        "cash": 0.3966
+      },
+      {
+        "date": "2024-03-08",
+        "AAPL": 0.3006,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3049,
+        "AMZN": 0.0,
+        "cash": 0.3945
+      },
+      {
+        "date": "2024-03-11",
+        "AAPL": 0.3015,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3073,
+        "AMZN": 0.0,
+        "cash": 0.3911
+      },
+      {
+        "date": "2024-03-12",
+        "AAPL": 0.3016,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3084,
+        "AMZN": 0.0,
+        "cash": 0.3901
+      },
+      {
+        "date": "2024-03-13",
+        "AAPL": 0.2999,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3115,
+        "AMZN": 0.0,
+        "cash": 0.3886
+      },
+      {
+        "date": "2024-03-14",
+        "AAPL": 0.3,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3155,
+        "AMZN": 0.0,
+        "cash": 0.3845
+      },
+      {
+        "date": "2024-03-15",
+        "AAPL": 0.3008,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3128,
+        "AMZN": 0.0,
+        "cash": 0.3864
+      },
+      {
+        "date": "2024-03-18",
+        "AAPL": 0.2995,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3219,
+        "AMZN": 0.0,
+        "cash": 0.3785
+      },
+      {
+        "date": "2024-03-19",
+        "AAPL": 0.3028,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3197,
+        "AMZN": 0.0,
+        "cash": 0.3775
+      },
+      {
+        "date": "2024-03-20",
+        "AAPL": 0.3048,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3208,
+        "AMZN": 0.0,
+        "cash": 0.3745
+      },
+      {
+        "date": "2024-03-21",
+        "AAPL": 0.2984,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3231,
+        "AMZN": 0.0,
+        "cash": 0.3784
+      },
+      {
+        "date": "2024-03-22",
+        "AAPL": 0.2992,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3273,
+        "AMZN": 0.0,
+        "cash": 0.3735
+      },
+      {
+        "date": "2024-03-25",
+        "AAPL": 0.2996,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3271,
+        "AMZN": 0.0,
+        "cash": 0.3734
+      },
+      {
+        "date": "2024-03-26",
+        "AAPL": 0.2995,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3286,
+        "AMZN": 0.0,
+        "cash": 0.3719
+      },
+      {
+        "date": "2024-03-27",
+        "AAPL": 0.3037,
+        "MSFT": 0.0,
+        "NVDA": 0.0,
+        "GOOGL": 0.3268,
+        "AMZN": 0.0,
+        "cash": 0.3694
+      }
+    ],
+    "final_account_value": 100809.2995757294,
+    "initial_account_value": 100000.0,
+    "elapsed_sec": 138.54055500030518
+  },
+  "extracted": {
+    "action": null,
+    "confidence": null,
+    "predicted_return": null,
+    "sharpe": 0.33005750266928463,
+    "total_return": 0.008092995757293941,
+    "mdd": -0.08197697076679711,
+    "calmar": 0.4200367173317732
+  },
+  "cost_usd": 0.0,
+  "latency_sec": 138.54055500030518,
+  "adapter_notes": "Real FinRL StockTradingEnv (5-ticker portfolio, PPO, 50000 timesteps, constrained). Constraints active: max 30% per stock, min 5% cash (enforced in step() via ConstrainedStockTradingEnv). Sharpe/MDD/Calmar are portfolio-level."
+}

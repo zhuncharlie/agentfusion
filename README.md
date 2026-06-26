@@ -117,10 +117,61 @@ _Averaged across AAPL/MSFT/NVDA, 2023-01-01~2023-06-30 test period. Preliminary.
 
 ## Findings
 
-Two results from this run are worth surfacing on their own, not just as leaderboard
-numbers — they're informative *because* they didn't go the way the obvious hypothesis
-would have predicted. We're shipping them as-is rather than tuning the rules until they
-look better.
+### Arena pilot: real FinRL × TradingAgents (5 stocks, 2024-Q1)
+
+The Arena pilot wires in the *actual* upstream packages — FinRL's `StockTradingEnv` +
+PPO, and TradingAgents' full 18-call multi-analyst debate — rather than the
+from-scratch reimplementations used in the preliminary leaderboard above.  Three results
+stand out.
+
+---
+
+**Fig 1 — Daily portfolio weight matrix (unconstrained)**
+
+![Weight heatmap](arena/results/portfolio_2024q1/plots/fig1_weight_heatmap.png)
+
+The unconstrained PPO agent concentrated 91 % of the portfolio in AAPL within the first
+7 trading days — the four remaining tickers (MSFT, NVDA, GOOGL, AMZN) appear as uniform
+white in the heatmap for the rest of the quarter.  The three dotted milestone lines mark
+when AAPL allocation crossed 30 % (day 3), 50 % (day 5), and 80 % (day 7): the policy
+made its entire bet in a single week and never unwound it.  This is a direct consequence
+of the 2020–2022 training window, in which AAPL was the dominant performer; the learned
+prior carried over unchanged into the 2024-Q1 test period.
+
+---
+
+**Fig 2 — Cumulative return vs buy-and-hold benchmarks**
+
+![Equity curves](arena/results/portfolio_2024q1/plots/fig2_equity_curves.png)
+
+Adding a single constraint layer — 30 % cap per stock, 5 % minimum cash — with no
+change to the PPO architecture or training procedure flipped the portfolio return from
+**−6.97 % to +0.81 %** and cut max drawdown from −13.05 % to −8.20 % (Sharpe: −1.52 →
++0.33).  For reference, the equal-weight buy-and-hold baseline across all five stocks
+returned **+24.7 %** over the same period, driven largely by NVDA (+87.6 %); the
+simplest possible allocation strategy outperformed the unconstrained RL agent by over 30
+percentage points, with no training required.
+
+---
+
+**Fig 3 — AAPL concentration and overfitting timeline**
+
+![AAPL concentration](arena/results/portfolio_2024q1/plots/fig3_aapl_concentration.png)
+
+The concentration was not gradual drift — it was a rapid, deliberate reallocation: PPO
+reached 80 % AAPL by day 7 and 99.8 % by mid-March, while the bottom panel shows the
+policy left positive alpha on the table every single week from late January onward.
+Crucially, the constrained variant's 27.6 % average AAPL weight demonstrates that the
+PPO policy is *entirely capable* of distributing capital across all five stocks — it
+simply has no training-time incentive to do so without an explicit constraint.  The
+implication: position-size constraints are not a workaround for a broken policy; they
+are a prerequisite for deploying any single-objective RL agent in a multi-asset setting.
+
+---
+
+Two results from the earlier preliminary run (3 stocks, 2023-H1) are also worth
+surfacing — they're informative *because* they didn't go the way the obvious hypothesis
+would have predicted:
 
 **The unanimity-vote ensemble made zero trades, on all three tickers.**
 `FinRLPPOAgent` converges to a single BUY on day 1 of the test period and HOLDs forever

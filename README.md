@@ -183,6 +183,24 @@ are a prerequisite for deploying any single-objective RL agent in a multi-asset 
 
 ---
 
+---
+
+**TradingAgents signal quality (315 decisions, 5 tickers × 2024-Q1)**
+
+After a full run of the real TradingAgents 18-call multi-analyst debate (~7.9 min and
+~$4.07 per decision, $10.19 total), the aggregate signal direction tracked realised
+returns closely — the framework correctly called AAPL bearish (63 % SELL, actual −7.5 %),
+NVDA bullish (41 % BUY, actual +87.6 %), and AMZN bullish (46 % BUY, actual +20.3 %),
+while remaining ambivalent on MSFT and GOOGL.  At the individual-decision level,
+FinRL and TradingAgents agreed on only 43 % of overlapping (ticker, date) pairs — the
+largest divergence was AAPL in early January, where TradingAgents called SELL every day
+while FinRL was aggressively buying.  TradingAgents turned out to be right on direction;
+FinRL's AAPL overweighting drove the −6.97 % loss.  Full reports:
+`arena/reports/2024q1/report1_finrl_performance.md`,
+`report2_tradingagents_signals.md`, `report3_divergence_analysis.md`.
+
+---
+
 Two results from the earlier preliminary run (3 stocks, 2023-H1) are also worth
 surfacing — they're informative *because* they didn't go the way the obvious hypothesis
 would have predicted:

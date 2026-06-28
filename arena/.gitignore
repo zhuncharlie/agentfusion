@@ -4,8 +4,5 @@ adapters/tradingagents/vendor/
 # Runtime state: LLM call cache, progress checkpoints, partial decisions
 adapters/tradingagents/.state/
 
-# Partial/intermediate reports generated while batch is running
-reports/2024q1_partial/
 
-# Incomplete TradingAgents result (batch still running)
-results/portfolio_2024q1/tradingagents.json
+# (tradingagents.json is now complete — tracked by git)

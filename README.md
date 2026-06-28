@@ -154,6 +154,20 @@ percentage points, with no training required.
 
 ---
 
+**Fig 2b — Scenario comparison: when FinRL fails vs when it excels**
+
+![Scenario comparison](arena/results/comparison/fig_scenario_comparison.png)
+
+The same PPO algorithm, two different experimental designs.  Left: 5 stocks, no
+constraints, distribution shift between training (2020–22 bull) and test (2024
+correction) — produces near-total AAPL concentration and a **−6.97 % return**.  Right:
+10 stocks, 20 % per-stock cap, aligned distribution (2019–20 bull → 2021-H1 bull
+continuation) — the policy diversifies across GOOGL, MSFT, AAPL, TSLA and NVDA and
+returns **+19.94 % (Sharpe +1.55)**.  The algorithm is not the bottleneck; the scenario
+design choices are.
+
+---
+
 **Fig 3 — AAPL concentration and overfitting timeline**
 
 ![AAPL concentration](arena/results/portfolio_2024q1/plots/fig3_aapl_concentration.png)

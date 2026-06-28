@@ -34,6 +34,23 @@ TASK_CONFIGS = {
         "test_start":  "2024-01-01",
         "test_end":    "2024-03-31",
     },
+    # FinRL optimal scenario:
+    #   - 10 stocks (larger pool → real portfolio optimisation)
+    #   - train 2019-2020 bull/recovery, test 2021-H1 same bull regime (no distribution shift)
+    #   - used with --constrained (20% cap, 5% cash) to prevent single-stock blow-up
+    #   - 2021-H1 had clear uptrends across most tech → RL excels at trend capture
+    "portfolio_2021h1_optimal": {
+        "tickers": [
+            "AAPL", "MSFT", "NVDA", "GOOGL", "AMZN",
+            "TSLA", "AMD",  "META", "NFLX",  "INTC",
+        ],
+        "train_start":      "2019-01-01",
+        "train_end":        "2020-12-31",
+        "test_start":       "2021-01-01",
+        "test_end":         "2021-06-30",
+        "max_single_weight": 0.20,   # tighter cap for 10-stock pool
+        "min_cash_ratio":    0.05,
+    },
     "portfolio_2023h1": {
         "tickers":     ["AAPL", "MSFT", "NVDA"],
         "train_start": "2020-01-01",
@@ -70,30 +87,27 @@ class ConstrainedStockTradingEnv(StockTradingEnv):
     """StockTradingEnv with hard position-size constraints enforced at every step.
 
     Constraints (applied before the parent processes buy actions):
-      - MAX_SINGLE_WEIGHT: no single stock may exceed this fraction of portfolio value
-      - MIN_CASH_RATIO:    cash may not fall below this fraction of portfolio value
+      - max_single_weight: no single stock may exceed this fraction of portfolio value
+      - min_cash_ratio:    cash may not fall below this fraction of portfolio value
 
-    Implementation: override step() to pre-clip the raw PPO actions (which are in
-    [-1, 1] space, later scaled by hmax) so that the resulting share purchases cannot
-    violate either constraint.  Sell actions are left untouched (selling always reduces
-    concentration; we do not enforce minimum stock weights).
+    Both are configurable at construction time so different tasks can use different caps
+    (e.g. 30% for 5 stocks, 20% for 10 stocks).
     """
-    MAX_SINGLE_WEIGHT: float = 0.30   # max 30% in any single stock
-    MIN_CASH_RATIO:    float = 0.05   # min 5% cash at all times
+
+    def __init__(self, *args,
+                 max_single_weight: float = 0.30,
+                 min_cash_ratio: float    = 0.05,
+                 **kwargs):
+        super().__init__(*args, **kwargs)
+        self._max_single_weight = max_single_weight
+        self._min_cash_ratio    = min_cash_ratio
 
     def step(self, actions):
-        # terminal check mirrors the parent: if already at final day, skip constraint
-        # logic and let the parent handle the terminal reporting path.
         if self.day < len(self.df.index.unique()) - 1:
             actions = self._clip_to_constraints(np.array(actions, dtype=float))
         return super().step(actions)
 
     def _clip_to_constraints(self, actions: np.ndarray) -> np.ndarray:
-        """Pre-clip raw PPO actions ([-1,1] space) to satisfy weight constraints.
-
-        The parent will multiply by hmax and convert to int, so we work in
-        share-delta space internally, then divide back by hmax before returning.
-        """
         cash   = float(self.state[0])
         prices = np.array(self.state[1:1 + self.stock_dim], dtype=float)
         shares = np.array(self.state[1 + self.stock_dim:1 + 2 * self.stock_dim],
@@ -103,18 +117,14 @@ class ConstrainedStockTradingEnv(StockTradingEnv):
         if V <= 0 or np.any(prices <= 0):
             return actions
 
-        # Convert raw actions to share-delta space for constraint arithmetic
-        acts = actions * self.hmax   # float deltas
+        acts = actions * self.hmax
 
-        # ── Per-stock weight cap ────────────────────────────────────────────
         for i in range(self.stock_dim):
             if acts[i] > 0:
-                # max additional shares before hitting the weight cap
-                max_allowed = max(0.0, self.MAX_SINGLE_WEIGHT * V / prices[i] - shares[i])
+                max_allowed = max(0.0, self._max_single_weight * V / prices[i] - shares[i])
                 acts[i] = min(acts[i], max_allowed)
 
-        # ── Cash floor: total buy spend ≤ (cash - MIN_CASH_RATIO * V) ──────
-        spendable = max(0.0, cash - self.MIN_CASH_RATIO * V)
+        spendable = max(0.0, cash - self._min_cash_ratio * V)
         total_buy_cost = sum(
             acts[i] * prices[i] * (1.0 + self.buy_cost_pct[i])
             for i in range(self.stock_dim) if acts[i] > 0
@@ -125,7 +135,6 @@ class ConstrainedStockTradingEnv(StockTradingEnv):
                 if acts[i] > 0:
                     acts[i] *= scale
 
-        # Return un-scaled so the parent's `actions * hmax` restores share deltas
         return acts / self.hmax
 
 
@@ -277,23 +286,39 @@ def _print_comparison(label_a: str, res_a: dict, label_b: str, res_b: dict) -> N
     print(f"{'─'*70}\n")
 
 
-def main(task_id: str, total_timesteps: int, constrained: bool = False) -> None:
+def main(task_id: str, total_timesteps: int, constrained: bool = False,
+         device: str = "cpu") -> None:
     cfg = TASK_CONFIGS[task_id]
     tickers    = cfg["tickers"]
     train_start, train_end = cfg["train_start"], cfg["train_end"]
     test_start,  test_end  = cfg["test_start"],  cfg["test_end"]
 
-    env_class  = ConstrainedStockTradingEnv if constrained else StockTradingEnv
-    label      = "constrained" if constrained else "unconstrained"
-    out_file   = "finrl_constrained.json" if constrained else "finrl.json"
+    # Per-task constraint parameters (fall back to class defaults)
+    max_single_weight = cfg.get("max_single_weight", 0.30)
+    min_cash_ratio    = cfg.get("min_cash_ratio",    0.05)
+
+    env_class = ConstrainedStockTradingEnv if constrained else StockTradingEnv
+    label     = "constrained" if constrained else "unconstrained"
+    out_file  = "finrl_constrained.json" if constrained else "finrl.json"
 
     if constrained:
         print(
-            f"[ConstrainedStockTradingEnv] "
-            f"max_single_weight={ConstrainedStockTradingEnv.MAX_SINGLE_WEIGHT:.0%}  "
-            f"min_cash={ConstrainedStockTradingEnv.MIN_CASH_RATIO:.0%}",
+            f"[ConstrainedStockTradingEnv]  "
+            f"max_single_weight={max_single_weight:.0%}  "
+            f"min_cash={min_cash_ratio:.0%}  device={device}",
             flush=True,
         )
+
+    def _make_env(df):
+        kwargs = build_env_kwargs(stock_dim=len(tickers))
+        if constrained:
+            return ConstrainedStockTradingEnv(
+                df=df,
+                max_single_weight=max_single_weight,
+                min_cash_ratio=min_cash_ratio,
+                **kwargs,
+            )
+        return StockTradingEnv(df=df, **kwargs)
 
     t0      = time.time()
     long_df = load_long_format(tickers)
@@ -313,18 +338,21 @@ def main(task_id: str, total_timesteps: int, constrained: bool = False) -> None:
     train_df = _reindex_by_day(train_df.reset_index(drop=True))
     test_df  = _reindex_by_day(test_df.reset_index(drop=True))
 
-    env_kwargs  = build_env_kwargs(stock_dim=len(tickers))
-    train_env   = env_class(df=train_df, **env_kwargs)
-    env_train, _ = train_env.get_sb_env()
+    env_train_obj = _make_env(train_df)
+    env_train, _  = env_train_obj.get_sb_env()
 
-    agent       = DRLAgent(env=env_train)
-    model       = agent.get_model("ppo", seed=0, verbose=0)
-    print(f"Training PPO ({label}) for {total_timesteps} timesteps on "
+    agent = DRLAgent(env=env_train)
+    model = agent.get_model("ppo", seed=0, verbose=0,
+                            model_kwargs={"device": device})
+    print(f"Training PPO ({label}, device={device}) for {total_timesteps} timesteps on "
           f"{tickers} ({train_start}..{train_end})...", flush=True)
-    trained_model = DRLAgent.train_model(model, tb_log_name="ppo_arena", total_timesteps=total_timesteps)
+    trained_model = DRLAgent.train_model(model, tb_log_name="ppo_arena",
+                                         total_timesteps=total_timesteps)
 
-    test_env  = env_class(df=test_df, **env_kwargs)
-    account_memory, actions_memory = DRLAgent.DRL_prediction(trained_model, test_env, deterministic=True)
+    test_env  = _make_env(test_df)
+    account_memory, actions_memory = DRLAgent.DRL_prediction(
+        trained_model, test_env, deterministic=True
+    )
 
     elapsed = time.time() - t0
 
@@ -340,9 +368,8 @@ def main(task_id: str, total_timesteps: int, constrained: bool = False) -> None:
     constraint_note = ""
     if constrained:
         constraint_note = (
-            f" Constraints active: max {ConstrainedStockTradingEnv.MAX_SINGLE_WEIGHT:.0%} "
-            f"per stock, min {ConstrainedStockTradingEnv.MIN_CASH_RATIO:.0%} cash "
-            f"(enforced in step() via ConstrainedStockTradingEnv)."
+            f" Constraints: max {max_single_weight:.0%} per stock, "
+            f"min {min_cash_ratio:.0%} cash (ConstrainedStockTradingEnv)."
         )
 
     native_output = {
@@ -408,6 +435,9 @@ if __name__ == "__main__":
                         choices=list(TASK_CONFIGS))
     parser.add_argument("--timesteps",   type=int, default=50_000)
     parser.add_argument("--constrained", action="store_true",
-                        help="Use ConstrainedStockTradingEnv (max 30%% per stock, min 5%% cash)")
+                        help="Use ConstrainedStockTradingEnv with per-task caps")
+    parser.add_argument("--device",      default="cpu",
+                        choices=["cpu", "cuda"],
+                        help="PyTorch device for PPO policy network")
     args = parser.parse_args()
-    main(args.task, args.timesteps, args.constrained)
+    main(args.task, args.timesteps, args.constrained, args.device)

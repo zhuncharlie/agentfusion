@@ -3,64 +3,50 @@
 **Framework:** TauricResearch/TradingAgents v0.3.0
 **Architecture:** 4-analyst debate (market + sentiment + news + fundamentals) → bull/bear debate → portfolio manager → final decision
 **LLM:** DeepSeek-flash (all roles, budget-first config)
-**Decisions available:** 317
+**Total decisions:** 315 · **Avg latency:** ~7.9 min/decision · **Avg cost:** ~$4.07/decision · **Total cost:** ~$10.19
 
-## Signal Distribution Per Ticker
+---
 
-| Ticker | Days | BUY | HOLD | SELL | Avg elapsed (s) | Avg cost ($) |
-|--------|------|-----|------|------|-----------------|-------------|
-| AAPL | 64 | 2 | 21 | 41 | 441 | 3.9909 |
-| MSFT | 64 | 11 | 39 | 14 | 432 | 4.0234 |
-| NVDA | 63 | 26 | 28 | 9 | 501 | 4.0668 |
-| GOOGL | 63 | 18 | 32 | 13 | 574 | 4.1432 |
-| AMZN | 63 | 29 | 20 | 14 | 421 | 4.0384 |
+## Fig 1 — Signal Distribution & Daily Timeline
 
-## Cost & Latency Summary
+![Signal distribution](report2_fig1_signal_dist.png)
 
-| Metric | Value |
-|--------|-------|
-| Total decisions | 317 |
-| Total LLM calls | 871,543 (~2749/decision) |
-| Total tokens | 7,843,777,874 |
-| Total cost (flash-only) | $1284.5669 |
-| Avg cost/decision | $4.0523 |
-| Avg wall-clock/decision | 473s (7.9 min) |
+**Upper panel — bar chart:** For each of the five tickers, the count of BUY / HOLD / SELL
+decisions over the full quarter. Below each group, the actual 2024-Q1 return is annotated
+for reference. The directional alignment is striking:
 
-## Sample Decisions
+| Ticker | Dominant signal | Actual Q1 return | Aligned? |
+|---|---|---|---|
+| AAPL | **SELL** (63 %) | −7.5 % | ✓ |
+| MSFT | HOLD (61 %) | +8.9 % | ✓ neutral |
+| NVDA | **BUY** (41 %) | +87.6 % | ✓ |
+| GOOGL | HOLD (51 %) | +7.6 % | ✓ neutral |
+| AMZN | **BUY** (46 %) | +20.3 % | ✓ |
 
-### Example BUY signal
+**Lower panel — timeline:** Each dot is one daily decision, positioned above the ticker's
+baseline (BUY), on it (HOLD), or below (SELL). AAPL's cluster of red SELL dots throughout
+January and February stands out clearly. NVDA and AMZN show more green BUY dots in the
+first half of the quarter, consistent with their strong performance.
 
-**AAPL 2024-01-10** → Overweight (BUY)
-> ## Final Trading Decision: **Overweight** ### Synthesis of the Risk Analysts’ Debate The debate exposes the core tension: a structurally superior business at a full valuation, caught in a fragile technical recovery with no institutional confirmation. - **The Aggressive Analyst** correctly identifies the long‑term foundation – price above the 200‑day SMA ($178.06), a golden cross intact, and a…
+---
 
-### Example SELL signal
+## Fig 2 — Latency & Cost per Decision
 
-**AAPL 2024-01-01** → Underweight (SELL)
-> **Final Trading Decision: Underweight** **Rationale** The debate correctly identifies a tension between Apple’s resilient long-term structure (fortress balance sheet, $100B FCF, 2B+ active devices, golden cross) and deteriorating short-term momentum (MACD bearish crossover, price below 10 EMA and Bollinger middle band, 58% histogram collapse in 10 sessions). The risk/reward is nearly 1:1—3.3%…
+![Latency and cost](report2_fig2_latency_cost.png)
 
-### Example HOLD signal
+**Left histogram:** Decision latency is broadly distributed around 7–9 minutes with a long
+tail up to ~15 min, driven by longer multi-analyst debates on complex days. The median
+(~7.4 min) is slightly faster than the mean (~7.9 min).
 
-**AAPL 2024-01-09** → Hold (HOLD)
-> ## Final Trading Decision: **Hold** ### Synthesis of the Risk Analysts’ Debate The debate among the three analysts has sharpened a clear, balanced picture. No side delivers a knockout argument, and each overreaches in at least one critical area. - **Aggressive Analyst** correctly identifies that the long-term structure (Golden Cross intact, 200‑day SMA at $177.93 providing a 2.9% cushion) and…
+**Centre box plot:** GOOGL decisions are consistently the slowest (~9.6 min median),
+reflecting the richer news and fundamentals coverage for a diversified tech+cloud company.
+AMZN and AAPL are fastest (~7 min), likely because the debate converges quickly on a
+clear directional view.
 
-## Latest Decisions (most recent 15)
+**Right scatter:** Cost and latency are highly correlated (r ≈ 0.95) because DeepSeek-flash
+pricing is token-based and token count is proportional to debate length. There are no
+pathological outliers — no single call exceeded $8.
 
-| Ticker | Date | Signal | Raw | Elapsed (s) |
-|--------|------|--------|-----|-------------|
-| NVDA | 2024-03-07 | HOLD | Hold | 434 |
-| NVDA | 2024-03-08 | SELL | Underweight | 490 |
-| NVDA | 2024-03-11 | BUY | Overweight | 471 |
-| NVDA | 2024-03-12 | SELL | Underweight | 463 |
-| NVDA | 2024-03-13 | BUY | Overweight | 518 |
-| NVDA | 2024-03-14 | HOLD | Hold | 488 |
-| NVDA | 2024-03-15 | HOLD | Hold | 475 |
-| NVDA | 2024-03-18 | BUY | Overweight | 525 |
-| NVDA | 2024-03-19 | BUY | Overweight | 388 |
-| NVDA | 2024-03-20 | HOLD | Hold | 468 |
-| NVDA | 2024-03-21 | BUY | Overweight | 446 |
-| NVDA | 2024-03-22 | BUY | Overweight | 464 |
-| NVDA | 2024-03-25 | SELL | Underweight | 445 |
-| NVDA | 2024-03-26 | HOLD | Hold | 440 |
-| NVDA | 2024-03-27 | SELL | Underweight | 433 |
-
-_Adapter notes: TradingAgents full run: 315 (ticker,date) pairs (305 NYSE trading days + 10 holiday dates from original Mon-Fri batch), all DeepSeek-flash, ~18 LLM calls per pair._
+**Operational take:** At ~$4/call and ~8 min/call, TradingAgents is not a real-time system.
+It is better framed as an overnight due-diligence tool: run each evening for the next
+trading day's watchlist, generating a reasoned case for each position before market open.

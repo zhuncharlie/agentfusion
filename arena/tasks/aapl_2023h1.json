@@ -1,0 +1,10 @@
+{
+  "task_id": "aapl_2023h1",
+  "ticker": "AAPL",
+  "history_csv": "data/raw/AAPL.csv",
+  "train_start": "2020-01-01",
+  "train_end": "2022-12-31",
+  "start": "2023-01-01",
+  "end": "2023-06-30",
+  "question": "Given this ticker's historical price/volume data, what is your assessment of its likely direction over the test window, and what trading action would you take (and when)?"
+}

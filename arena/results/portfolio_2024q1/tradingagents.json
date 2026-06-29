@@ -347,60 +347,6 @@
       },
       {
         "ticker": "AAPL",
-        "date": "2024-01-26",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data needed.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 3.",
-          "news_report": "Now I have sufficient data to compile a comprehensive report.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Final Trading Decision: Hold**\n\n**Rating:** Hold  \n**Action:** Maintain current position. No addition or reduction. Set tighter tactical guardrails per the Neutral Analyst\u2019s adjustment while preserving long\u2011term exposure.  \n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate is genuinely balanced, and no side delivers a knockout punch that justifies deviating from the Research Manager\u2019s and Trader\u2019s agreed Hold stance.\n\n**The Aggressive Analyst** correctly identifies powerful structur",
-        "elapsed_sec": 408.6,
-        "prompt_tokens": 152974,
-        "completion_tokens": 33575,
-        "cost_usd": 0.0308,
-        "llm_calls": 22
-      },
-      {
-        "ticker": "AAPL",
-        "date": "2024-01-29",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data needed.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
-          "news_report": "Based on the available data from the tools, I'll now compile a comprehensive report.",
-          "fundamentals_report": "I now have comprehensive fundamental data for Apple Inc."
-        },
-        "final_reasoning": "## Final Trading Decision: Underweight\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **15%** over the next 1\u20132 weeks, executing sales into strength at **$192\u2013$195** (Bollinger upper band, December high resistance). Maintain a stop-loss at **$182.50** on the remaining position (just below the 200-day SMA). Set a conditional re-entry limit order at **$180\u2013$185** (50-day SMA / VWMA zone). Do not initiate new long positions above $188. Ahead of the Feb 1 earnings, consider protectiv",
-        "elapsed_sec": 470.5,
-        "prompt_tokens": 973994,
-        "completion_tokens": 197193,
-        "cost_usd": 0.1916,
-        "llm_calls": 133
-      },
-      {
-        "ticker": "AAPL",
-        "date": "2024-01-30",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data needed for a comprehensive analysis.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
-          "news_report": "Now let me compile everything I've gathered into a comprehensive analysis report.",
-          "fundamentals_report": "Now I have comprehensive data."
-        },
-        "final_reasoning": "## Final Trading Decision: Underweight\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **15%** over the next 5\u201310 trading sessions, using any bounce toward the 10 EMA (~$188.66) or 50 SMA (~$188.79) as execution opportunities. Maintain the remaining core position with a hard stop\u2011loss at **$179.86** (200\u2011day SMA). Do not initiate new long positions. Reassess after the Feb 1 earnings print.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate confirms that the bear case car",
-        "elapsed_sec": 558.6,
-        "prompt_tokens": 1791726,
-        "completion_tokens": 363644,
-        "cost_usd": 0.3527,
-        "llm_calls": 240
-      },
-      {
-        "ticker": "AAPL",
         "date": "2024-01-31",
         "decision_raw": "Underweight",
         "decision": "SELL",
@@ -797,24 +743,6 @@
       },
       {
         "ticker": "AAPL",
-        "date": "2024-03-01",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "All data collected.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
-          "news_report": "AAPL News & Macro Research Report \u2014 March 1, 2024\n\n**Instrument:** AAPL (Apple Inc.",
-          "fundamentals_report": "Here is the comprehensive fundamental analysis report for **Apple Inc."
-        },
-        "final_reasoning": "**Rating:** Underweight  \n**Action:** Reduce AAPL position by **15\u201320%** over the next 1\u20132 weeks, executing sales into strength at **$180\u2013$182** (the 200\u2011SMA zone). Set a hard stop\u2011loss at **$175.00** on the remaining position (just below the Bollinger lower band). Do not initiate new long positions. Consider hedging a core position with out\u2011of\u2011the\u2011money put spreads expiring mid\u2011March to cover the EU DMA enforcement catalyst. Set a watch for re\u2011entry if the stock retests **$160\u2013$165** on volume",
-        "elapsed_sec": 463.9,
-        "prompt_tokens": 2318648,
-        "completion_tokens": 468523,
-        "cost_usd": 0.4558,
-        "llm_calls": 306
-      },
-      {
-        "ticker": "AAPL",
         "date": "2024-03-04",
         "decision_raw": "Underweight",
         "decision": "SELL",
@@ -1049,42 +977,6 @@
       },
       {
         "ticker": "AAPL",
-        "date": "2024-03-21",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Now I have comprehensive data.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
-          "news_report": "I now have sufficient data to construct a comprehensive report.",
-          "fundamentals_report": "Excellent \u2014 I have extensive annual data."
-        },
-        "final_reasoning": "## Final Trading Decision: **Hold**\n\n**Rating:** Hold  \n**Action:** Maintain current position. No addition or reduction at the $169.67 level. Implement the tactical risk-management guardrails detailed below.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate crystallizes a genuinely balanced risk/reward profile where neither side delivers a knockout punch. The **Aggressive Analyst** correctly highlights the nascent MACD histogram divergence (+0.59), the 106M\u2011share volume as potential c",
-        "elapsed_sec": 438.6,
-        "prompt_tokens": 2758084,
-        "completion_tokens": 562105,
-        "cost_usd": 0.5435,
-        "llm_calls": 371
-      },
-      {
-        "ticker": "AAPL",
-        "date": "2024-03-22",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Neutral** (Score: 5.",
-          "news_report": "Now I have all the data available.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "# Final Trading Decision: AAPL\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **20%** immediately at market. Execute the remainder of the reduction plan (total 15\u201325%) over the next 2\u20133 trading sessions using any bounce toward $171\u2013$173 (10\u2011EMA zone). Set a hard stop\u2011loss at **$164.00** on the remaining core position. If price closes below $164 on above\u2011average volume (>70M shares), reduce an additional **10\u201315%** automatically.\n\n---\n\n## Synthesis of the Risk Analysts\u2019 Debate\n\nTh",
-        "elapsed_sec": 451.7,
-        "prompt_tokens": 3596316,
-        "completion_tokens": 741097,
-        "cost_usd": 0.711,
-        "llm_calls": 481
-      },
-      {
-        "ticker": "AAPL",
         "date": "2024-03-25",
         "decision_raw": "Underweight",
         "decision": "SELL",
@@ -1100,42 +992,6 @@
         "completion_tokens": 9499429,
         "cost_usd": 9.2085,
         "llm_calls": 6162
-      },
-      {
-        "ticker": "AAPL",
-        "date": "2024-03-26",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data needed for a thorough analysis.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
-          "news_report": "Here is my comprehensive research report.",
-          "fundamentals_report": "I now have all the fundamental data needed."
-        },
-        "final_reasoning": "## Final Trading Decision: **Underweight**\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **15% immediately at market**. Place a limit order to reduce an additional **5%** at $172 (the 10\u2011EMA / VWMA confluence zone) to reach the upper end of the 15\u201320% reduction range. Set a hard stop\u2011loss on the remaining core position at **$160.00**. Do not initiate new long positions. Consider implementing a collar (sell $180 call, buy $160 put) on the retained exposure to generate premium and",
-        "elapsed_sec": 478.8,
-        "prompt_tokens": 4977085,
-        "completion_tokens": 1020423,
-        "cost_usd": 0.9825,
-        "llm_calls": 659
-      },
-      {
-        "ticker": "AAPL",
-        "date": "2024-03-27",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data needed for a comprehensive analysis.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
-          "news_report": "Now I have sufficient data to compile a comprehensive report.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "## Final Trading Decision: **Hold**\n\n**Rating:** Hold  \n**Action:** Maintain current position size. No additions or reductions at this time. Implement the explicit trigger-based guardrails detailed below.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate confirms a genuinely balanced risk/reward \u2013 neither the aggressive bull nor the conservative bear delivers a knockout punch. The Research Manager\u2019s **Hold** conclusion is the correct synthesis, supported by the trader\u2019s identical prop",
-        "elapsed_sec": 446.4,
-        "prompt_tokens": 5888763,
-        "completion_tokens": 1184395,
-        "cost_usd": 1.1561,
-        "llm_calls": 772
       },
       {
         "ticker": "AMZN",
@@ -1478,42 +1334,6 @@
         "completion_tokens": 3182701,
         "cost_usd": 3.062,
         "llm_calls": 2104
-      },
-      {
-        "ticker": "AMZN",
-        "date": "2024-01-26",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
-          "news_report": "Now I have sufficient data to compile a comprehensive report.",
-          "fundamentals_report": "Here is my comprehensive fundamental analysis report for **AMZN (Amazon."
-        },
-        "final_reasoning": "## Final Trading Decision for AMZN\n\n**Rating: Underweight**\n\n### Executive Summary\n\nReduce the AMZN position by **20%** from current allocation, locking in profits from the 10% rally off the January low. Set a hard stop-loss at **$149.50** (just below the 50\u2011day SMA) on the remaining core stake. Do not initiate new shorts. Prepare to further trim into earnings if the stock trades above $160, and identify a re\u2011entry zone at $135\u2013$140 should a 10\u201315% pullback materialize.\n\nThis decision synthesize",
-        "elapsed_sec": 531.4,
-        "prompt_tokens": 829518,
-        "completion_tokens": 163634,
-        "cost_usd": 0.162,
-        "llm_calls": 112
-      },
-      {
-        "ticker": "AMZN",
-        "date": "2024-01-29",
-        "decision_raw": "Overweight",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data for a thorough analysis.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "Now I have sufficient data to compile a comprehensive analysis.",
-          "fundamentals_report": "I have all the data I need."
-        },
-        "final_reasoning": "## Final Trading Decision for AMZN\n\n**Rating: Overweight**\n\n### Executive Summary\n\nMaintain the current AMZN position. **Do not add or trim at current levels ($161.26)**. The stock is technically extended (RSI 70, upper Bollinger Band, 7.4% above the 50\u2011day SMA) and the 31% rally in 8 months has priced in much of the fundamental improvement. However, the structural transformation\u2014$49B free cash flow swing, 82% operating cash flow surge to $85B, AWS/AI infrastructure moat\u2014is audited reality. The",
-        "elapsed_sec": 448.1,
-        "prompt_tokens": 1644402,
-        "completion_tokens": 329448,
-        "cost_usd": 0.3225,
-        "llm_calls": 219
       },
       {
         "ticker": "AMZN",
@@ -2164,114 +1984,6 @@
         "llm_calls": 6046
       },
       {
-        "ticker": "AMZN",
-        "date": "2024-03-20",
-        "decision_raw": "Buy",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "I now have sufficient data to compile my analysis.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating**: Buy\n\n**Executive Summary**: Initiate a phased Buy in AMZN at current levels (~$178). Deploy an initial 3% of portfolio now to capture the structural earnings inflection (PEG 0.69, FCF swing from \u2212$16.9B to +$32.2B, durable margin expansion to 6.4%). Reserve another 2\u20133% to add on a pullback to the $175.45\u2013$175.95 support zone (10 EMA / VWMA / Bollinger middle band confluence). Set a hard stop at $171.73 (lower Bollinger Band / March 11 low). Take one-third partial profits at $195, re",
-        "elapsed_sec": 386.1,
-        "prompt_tokens": 2601286,
-        "completion_tokens": 528046,
-        "cost_usd": 0.512,
-        "llm_calls": 349
-      },
-      {
-        "ticker": "AMZN",
-        "date": "2024-03-21",
-        "decision_raw": "Overweight",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data needed.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "Now I have a solid dataset from prediction markets to work with.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating**: Overweight\n\n**Executive Summary**: Adopt an Overweight strategic stance on AMZN but execute with patience. Do not buy at current levels (~$178) near resistance ($181.42). Deploy capital in two tranches: (1) a 1\u20132% starter position via limit order near the 10-EMA / Bollinger Middle band confluence ($175.63\u2013$176.27) with a tight stop at $171.75 (Bollinger lower band); (2) the remaining 4% at the 50-day SMA ($167.93) or if the MACD histogram turns positive, whichever occurs first. Total",
-        "elapsed_sec": 445.4,
-        "prompt_tokens": 3457403,
-        "completion_tokens": 706277,
-        "cost_usd": 0.6818,
-        "llm_calls": 461
-      },
-      {
-        "ticker": "AMZN",
-        "date": "2024-03-22",
-        "decision_raw": "Overweight",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
-          "news_report": "Now I have a rich dataset to compile into a comprehensive report.",
-          "fundamentals_report": "I now have all available data."
-        },
-        "final_reasoning": "## Final Trading Decision for AMZN\n\n**Rating: Overweight**\n\n### Executive Summary\n\nAdopt an **Overweight** strategic stance on AMZN. The structural transformation\u2014free cash flow swinging from \u2212$16.9B to +$32.2B, operating margins expanding from 2.4% to 13.1% TTM, and durable high\u2011margin growth in AWS, advertising, and AI\u2014is audited and undervalued at 23.6x forward P/E with a PEG of 1.83. Near\u2011term technical warnings (MACD divergence, declining volume, prediction market downside skew) are real bu",
-        "elapsed_sec": 408.2,
-        "prompt_tokens": 4309640,
-        "completion_tokens": 879788,
-        "cost_usd": 0.8497,
-        "llm_calls": 571
-      },
-      {
-        "ticker": "AMZN",
-        "date": "2024-03-25",
-        "decision_raw": "Overweight",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "All data is verified and consistent.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "I now have sufficient data to compile a comprehensive report.",
-          "fundamentals_report": "Excellent \u2014 I have a wealth of data to analyze."
-        },
-        "final_reasoning": "**Rating**: Overweight\n\n**Executive Summary**: Adopt an Overweight rating on AMZN. Initiate a 50\u201360% allocation (2.5\u20133% of portfolio) via limit orders in the $173\u2013$177 support zone, with a tighter stop at $170 (just below March consolidation lows and above the 50-SMA at $168.93). This improves risk-reward from ~1:1 to ~2:1 on the first tranche. Reserve the remaining 40\u201350% allocation to deploy on either (a) a confirmed breakout above $181.50 with volume >50M shares, or (b) a pullback to the 50-S",
-        "elapsed_sec": 383.3,
-        "prompt_tokens": 4797926,
-        "completion_tokens": 982954,
-        "cost_usd": 0.9469,
-        "llm_calls": 637
-      },
-      {
-        "ticker": "AMZN",
-        "date": "2024-03-26",
-        "decision_raw": "Overweight",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "I now have all the verified data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
-          "news_report": "Here is the comprehensive news and macro research report for **AMZN**.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating**: Overweight\n\n**Executive Summary**: Adopt Overweight on AMZN with a calibrated phased entry. Initiate a **1/4 position** (not 1/3) at current levels (~$178) to reflect the MACD bearish divergence risk. Set an initial hard stop at **$170** \u2014 just below the 50-day SMA ($169.40) and 2x ATR \u2014 to cap first-tranche drawdown at ~4.5%. Reserve the second tranche (1/4) for a dip to the **50-day SMA (~$169\u2013170)** and the third tranche (1/4) for a retest of the **200-day SMA (~$145\u2013150)** with a",
-        "elapsed_sec": 342.3,
-        "prompt_tokens": 5702963,
-        "completion_tokens": 1147743,
-        "cost_usd": 1.1198,
-        "llm_calls": 750
-      },
-      {
-        "ticker": "AMZN",
-        "date": "2024-03-27",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data and verified snapshot.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "Based on the available data sources, I have compiled the following comprehensive report for `AMZN`.",
-          "fundamentals_report": "Here is my comprehensive fundamental analysis report for **AMZN (Amazon."
-        },
-        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain AMZN at benchmark weight \u2014 no new entry, no reduction. The long-term structural thesis ($85B operating cash flow, $49B FCF turnaround, 20%+ ad growth, AWS AI re-acceleration) remains intact and supports full exposure as a core holding. However, the near-term tactical setup is unfavorable: MACD histogram collapsed from +4.41 to -0.10 with declining volume (33M vs 72M), the risk-reward at $180 is a poor 1.4:1, and the 77% probability of no rate cut",
-        "elapsed_sec": 323.8,
-        "prompt_tokens": 6547035,
-        "completion_tokens": 1317609,
-        "cost_usd": 1.2855,
-        "llm_calls": 861
-      },
-      {
         "ticker": "GOOGL",
         "date": "2024-01-01",
         "decision_raw": "Overweight",
@@ -2612,42 +2324,6 @@
         "completion_tokens": 3150863,
         "cost_usd": 3.0282,
         "llm_calls": 2081
-      },
-      {
-        "ticker": "GOOGL",
-        "date": "2024-01-26",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Excellent!",
-          "sentiment_report": "Overall Sentiment:** **Neutral** (Score: 5.",
-          "news_report": "Here is my comprehensive research report.",
-          "fundamentals_report": "I now have all the data I need."
-        },
-        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain current GOOGL position at current sizing (~4% of portfolio). Do not add or trim. The stock is overbought (RSI 76.66, above upper Bollinger band) with a 95% statistical probability of mean reversion within 2\u20133 weeks, and bears have correctly identified deteriorating TTM free cash flow ($27.9B, a 0.68% FCF yield) masked by the $73B FY2024 annual figure. However, prior lessons from 2024-03-15 (+4.6% alpha) and 2024-03-20 (+0.9% alpha) explicitly war",
-        "elapsed_sec": 416.7,
-        "prompt_tokens": 689378,
-        "completion_tokens": 131082,
-        "cost_usd": 0.1332,
-        "llm_calls": 89
-      },
-      {
-        "ticker": "GOOGL",
-        "date": "2024-01-29",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data needed.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "Now I have gathered what data is available.",
-          "fundamentals_report": "Now I have all the data needed for a comprehensive fundamental report."
-        },
-        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain existing GOOGL position at current sizing (3\u20135% of equity exposure). Do not add or trim ahead of tomorrow's Q4 earnings or the pending DOJ antitrust ruling. The 58% rally and RSI at 78 reflect genuine fundamental strength ($69.5B FCF, 23% net income growth) but also an already-executed P/E re-rate from 19x to 26x. The risk/reward is balanced at $152: the business quality justifies holding, but the technical extension (upper Bollinger Band, RSI 78",
-        "elapsed_sec": 431.1,
-        "prompt_tokens": 1426478,
-        "completion_tokens": 294128,
-        "cost_usd": 0.2821,
-        "llm_calls": 195
       },
       {
         "ticker": "GOOGL",
@@ -3316,96 +2992,6 @@
         "llm_calls": 6134
       },
       {
-        "ticker": "GOOGL",
-        "date": "2024-03-21",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data needed.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "Based on all available data, here is my comprehensive analysis report.",
-          "fundamentals_report": "Here is the comprehensive fundamental analysis report for **GOOGL (Alphabet Inc."
-        },
-        "final_reasoning": "## Portfolio Manager\u2019s Final Trading Decision\n\n**Rating: Hold**  \n**Ticker: GOOGL**  \n**Position Size:** Maintain current position at benchmark weight (~4\u20135% of equity portfolio).  \n**Stop-Loss:** Raise stop to **$141.50** (just below the 50-day SMA).  \n**Do not add or trim** at current levels.  \n**New entrants:** Wait for either a pullback to the 50-day SMA (~$141.60) or a confirmed breakout above $152 with volume >50M shares.\n\n---\n\n### Executive Summary\n\nThe risk analysts\u2019 debate converges on",
-        "elapsed_sec": 555.1,
-        "prompt_tokens": 3291611,
-        "completion_tokens": 672905,
-        "cost_usd": 0.6492,
-        "llm_calls": 439
-      },
-      {
-        "ticker": "GOOGL",
-        "date": "2024-03-22",
-        "decision_raw": "Buy",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "Excellent!",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
-          "news_report": "Based on all available data, here is my comprehensive research report.",
-          "fundamentals_report": "Excellent \u2014 I have comprehensive annual data for FY2022 and FY2023 plus a fundamentals snapshot."
-        },
-        "final_reasoning": "**Rating: Buy**  \n**Ticker: GOOGL**  \n**Position Size:** 3.5% of equity portfolio (scale in two tranches)  \n**Entry Plan:**  \n- **Tranche 1 (2.0%):** Initiate at market within the next session (~$149.50) to avoid missing momentum, given the March 18 MACD bullish crossover and 2.4\u00d7 volume accumulation.  \n- **Tranche 2 (1.5%):** Add on a pullback to **$143\u2013$145** (10\u2011day EMA confluence) using a limit order. If no pullback occurs within 10 trading days and the stock closes above **$152** on volume",
-        "elapsed_sec": 419.5,
-        "prompt_tokens": 4116802,
-        "completion_tokens": 845033,
-        "cost_usd": 0.813,
-        "llm_calls": 547
-      },
-      {
-        "ticker": "GOOGL",
-        "date": "2024-03-25",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "Here is my comprehensive news and macroeconomic report for the analysis of **GOOGL (Alphabet Inc.",
-          "fundamentals_report": "Now I have a comprehensive picture."
-        },
-        "final_reasoning": "## Portfolio Manager\u2019s Final Trading Decision\n\n**Rating: Hold**  \n**Ticker: GOOGL**  \n**Position Size:** Maintain current position at neutral weight (~4\u20135% of equity portfolio).  \n**Stop-Loss:** Maintain existing stop at **$141.50** (just below the 50-day SMA).  \n**Do not add or trim** at current levels near $148\u2013$149.  \n**New entrants:** Wait for either a pullback to the 10-day EMA (~$144.68) or a confirmed breakout above $152.43 with volume >50M shares.\n\n---\n\n### Executive Summary\n\nThe risk an",
-        "elapsed_sec": 414.4,
-        "prompt_tokens": 4641814,
-        "completion_tokens": 951347,
-        "cost_usd": 0.9162,
-        "llm_calls": 615
-      },
-      {
-        "ticker": "GOOGL",
-        "date": "2024-03-26",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "I now have sufficient data to compile a comprehensive report.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain current GOOGL position at benchmark weight (~4-5% of equity). Do not add or trim at the current $149 level. The 14.7% V-shaped rally in three weeks has pushed the stock near the upper Bollinger Band ($152.86) with RSI surging 32 points \u2014 mean-reversion risk is elevated. The imminent DOJ antitrust ruling is a genuine binary catalyst that could cost $10-15B in operating income if the Apple default deal is lost. However, the underlying business qual",
-        "elapsed_sec": 424.0,
-        "prompt_tokens": 5541649,
-        "completion_tokens": 1119544,
-        "cost_usd": 1.0893,
-        "llm_calls": 729
-      },
-      {
-        "ticker": "GOOGL",
-        "date": "2024-03-27",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
-          "news_report": "Here is my comprehensive news and macro research report for **GOOGL (Alphabet Inc.",
-          "fundamentals_report": "Here is the comprehensive fundamental analysis report for **GOOGL (Alphabet Inc."
-        },
-        "final_reasoning": "**Portfolio Manager\u2019s Final Trading Decision**  \n**Rating: Hold**  \n**Ticker: GOOGL**  \n**Position Size:** Maintain current neutral weight (4\u20135% of equity portfolio).  \n**Stop-Loss:** Keep existing hard stop at **$141.50** (just below the 50-day SMA).  \n**Action:** Do **not** add or trim at current levels (~$149.50).  \n**New Entrants / Additions:**  \n- Set a **GTC limit order** to add 0.2\u00d7 benchmark weight at **$138\u2013$142** (tactical re-entry zone).  \n- Set a **GTC buy-stop order** to add 0.1\u00d7 be",
-        "elapsed_sec": 383.6,
-        "prompt_tokens": 6401706,
-        "completion_tokens": 1287654,
-        "cost_usd": 1.2568,
-        "llm_calls": 840
-      },
-      {
         "ticker": "MSFT",
         "date": "2024-01-01",
         "decision_raw": "Hold",
@@ -3746,60 +3332,6 @@
         "completion_tokens": 3077433,
         "cost_usd": 2.9542,
         "llm_calls": 2035
-      },
-      {
-        "ticker": "MSFT",
-        "date": "2024-01-26",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "Now I have comprehensive data.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
-          "news_report": "Here is my comprehensive research report on the current state of the world relevant for **MSFT (Microsoft Corporation)** trading.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating: Underweight** \u2013 Reduce exposure by 15\u201320% into strength; take partial profits near resistance. Set tiered re-entry zones and a protective stop on the core position.\n\n---\n\n### Executive Summary\n\nThe risk analysts\u2019 debate converges on the need to reduce exposure, but the magnitude divides them. The **Aggressive Analyst** and **Research Manager** both advocate a 15\u201320% trim at $403 resistance with a re-entry target of $370\u2013375. The **Conservative Analyst** demands a 50%+ reduction, citing",
-        "elapsed_sec": 399.1,
-        "prompt_tokens": 313192,
-        "completion_tokens": 68002,
-        "cost_usd": 0.0629,
-        "llm_calls": 45
-      },
-      {
-        "ticker": "MSFT",
-        "date": "2024-01-29",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Excellent.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
-          "news_report": "Based on the data collected, here is my comprehensive report.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: All three risk analysts converge on HOLD despite opposite rationales \u2014 a rare consensus that commands respect. Maintain current MSFT position at market weight. Do not add at $401 (RSI 78.78, 1.15% from upper Bollinger Band, binary earnings catalyst tomorrow); do not sell (93% prediction-market floor above $345, $125B TTM net income, fortress balance sheet with $111B cash vs $60B debt). Set a trailing stop at the 10-EMA ($391) \u2014 if MSFT closes below this l",
-        "elapsed_sec": 386.8,
-        "prompt_tokens": 1109684,
-        "completion_tokens": 230402,
-        "cost_usd": 0.2199,
-        "llm_calls": 152
-      },
-      {
-        "ticker": "MSFT",
-        "date": "2024-01-30",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "I now have comprehensive data.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
-          "news_report": "Now I have all the data available.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Final Trading Decision: MSFT \u2013 Underweight**\n\n**Rating:** Underweight  \n**Action:** Reduce exposure by 15\u201320% from current position at $400. Set a wider stop-loss at $378 (below the 50 SMA and within the prediction market\u2019s 93% floor). Do not initiate new positions at this level.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate converges on **reducing exposure**, but the magnitude and stop placement divide the analysts. The **Aggressive Analyst** correctly highlights that Microsoft",
-        "elapsed_sec": 455.3,
-        "prompt_tokens": 1952441,
-        "completion_tokens": 399342,
-        "cost_usd": 0.3852,
-        "llm_calls": 260
       },
       {
         "ticker": "MSFT",
@@ -4199,24 +3731,6 @@
       },
       {
         "ticker": "MSFT",
-        "date": "2024-03-01",
-        "decision_raw": "Overweight",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
-          "news_report": "Now I have sufficient data to compile a comprehensive report.",
-          "fundamentals_report": "Now I have all the data needed to produce a comprehensive fundamental analysis report."
-        },
-        "final_reasoning": "## Final Trading Decision: MSFT \u2013 Overweight\n\n### Rating: **Overweight**  \n**Action:** Initiate a phased accumulation with a limit order at **$388** (50-day SMA confluence) for the first tranche (60% of full intended position). Set stop-loss at **$370**. Remaining 40% to be added on a confirmed breakout above $412 on volume >30M shares.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate centers on whether MSFT\u2019s structural strength (39% net margin, $111B cash, AI distribution moat, 50%",
-        "elapsed_sec": 430.8,
-        "prompt_tokens": 2464023,
-        "completion_tokens": 500126,
-        "cost_usd": 0.485,
-        "llm_calls": 327
-      },
-      {
-        "ticker": "MSFT",
         "date": "2024-03-04",
         "decision_raw": "Overweight",
         "decision": "BUY",
@@ -4451,42 +3965,6 @@
       },
       {
         "ticker": "MSFT",
-        "date": "2024-03-21",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data needed.",
-          "sentiment_report": "Overall Sentiment:** **Bullish** (Score: 6.",
-          "news_report": "Now I have sufficient data to compile a comprehensive report.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating: Underweight**  \n**Action:** Reduce 15\u201320% of the MSFT position at current levels (~$422). Set a hard stop-loss at $405 (daily close below on volume >20M shares). Do not initiate new longs. Use proceeds to set a limit order to **re-add 5% of original position at $412** (10-EMA) if the stock retraces, creating a tactical swing within the underweight stance.\n\n---\n\n### Synthesis & Final Decision\n\nThe debate is sharply divided, but the **Research Manager\u2019s plan** provides the most rigorous",
-        "elapsed_sec": 469.6,
-        "prompt_tokens": 2927686,
-        "completion_tokens": 599535,
-        "cost_usd": 0.5777,
-        "llm_calls": 394
-      },
-      {
-        "ticker": "MSFT",
-        "date": "2024-03-22",
-        "decision_raw": "Underweight",
-        "decision": "SELL",
-        "analyst_conclusions": {
-          "market_report": "All data is consistent between the tools and the verified snapshot.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
-          "news_report": "Here is the comprehensive news and macroeconomic research report for **MSFT (Microsoft Corporation)**.",
-          "fundamentals_report": "Now I have comprehensive data."
-        },
-        "final_reasoning": "**Rating**: Underweight\n\n**Executive Summary**: Reduce MSFT position by 15-20% at market (~$421) to reflect the Underweight rating. Set a stop-loss at $400 (daily close below on volume >20M shares), confluent with the rising 50-day SMA. Deploy proceeds into cash (SGOV or equivalent) given the 77% probability of no rate cuts. Establish a tiered re-entry plan: limit order to add 5% of original position at $385 and another 5% at $375 (near the 200-day SMA and the prediction market's 93% floor above",
-        "elapsed_sec": 405.3,
-        "prompt_tokens": 3766304,
-        "completion_tokens": 773045,
-        "cost_usd": 0.7437,
-        "llm_calls": 503
-      },
-      {
-        "ticker": "MSFT",
         "date": "2024-03-25",
         "decision_raw": "Hold",
         "decision": "HOLD",
@@ -4502,42 +3980,6 @@
         "completion_tokens": 9532992,
         "cost_usd": 9.2369,
         "llm_calls": 6182
-      },
-      {
-        "ticker": "MSFT",
-        "date": "2024-03-26",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data I need.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
-          "news_report": "Now I have a comprehensive dataset.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain current MSFT position at existing size. Do not add on this pullback \u2014 the bull case relies on too many \"everything goes right\" assumptions about AI monetization timelines, Anthropic not disrupting OpenAI's lead, and FCF stabilization. Do not trim either \u2014 the distribution moat across Office/GitHub/Azure/Windows, $111B net cash position, and 19x forward P/E (well below 28x historical) provide real downside backstops. The review trigger at $402 (50",
-        "elapsed_sec": 437.6,
-        "prompt_tokens": 5125889,
-        "completion_tokens": 1051568,
-        "cost_usd": 1.0121,
-        "llm_calls": 681
-      },
-      {
-        "ticker": "MSFT",
-        "date": "2024-03-27",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data needed.",
-          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
-          "news_report": "Now I have comprehensive data to compile a thorough report.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain current MSFT position at $414 with no additions or reductions. The debate converges unanimously on Hold \u2014 all three analysts, the Research Manager, and the Trader agree the evidence is genuinely balanced. Set a price alert at $395 (4.8% below, confluent with the 50-day SMA at $402.63 and the March 6 low at $395.16) as the primary downside review trigger. Establish a tactical decision point at $409 (Bollinger middle band / VWMA confluence): if MSF",
-        "elapsed_sec": 408.3,
-        "prompt_tokens": 6037511,
-        "completion_tokens": 1216390,
-        "cost_usd": 1.1858,
-        "llm_calls": 793
       },
       {
         "ticker": "NVDA",
@@ -4880,60 +4322,6 @@
         "completion_tokens": 3112970,
         "cost_usd": 2.9895,
         "llm_calls": 2058
-      },
-      {
-        "ticker": "NVDA",
-        "date": "2024-01-26",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data needed for a comprehensive analysis.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
-          "news_report": "I now have sufficient data to compile a comprehensive report.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "## Final Trading Decision: NVDA\n\n**Rating: Hold**\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate exposes a genuine tension that cannot be resolved with conviction in either direction. **The Aggressive Analyst** correctly identifies the structural bull case: PEG 0.59, $46.3B TTM FCF, 63% net margins, 80\u201390% AI training market share, a widening Golden Cross, and institutional accumulation confirmed by VWMA at $56.57. The forward P/E of ~15x on 95% EPS growth is objectively cheap for a gen",
-        "elapsed_sec": 462.2,
-        "prompt_tokens": 517013,
-        "completion_tokens": 100888,
-        "cost_usd": 0.1006,
-        "llm_calls": 67
-      },
-      {
-        "ticker": "NVDA",
-        "date": "2024-01-29",
-        "decision_raw": "Overweight",
-        "decision": "BUY",
-        "analyst_conclusions": {
-          "market_report": "Now I have all the data needed.",
-          "sentiment_report": "Overall Sentiment:** **Neutral** (Score: 5.",
-          "news_report": "Now I have a rich set of prediction market data.",
-          "fundamentals_report": "Now I have all available data."
-        },
-        "final_reasoning": "## Final Trading Decision: NVDA\n\n**Rating: Overweight**\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate exposes a genuine tension between extraordinary fundamentals and stretched near-term technicals. Each analyst makes valid points, but the Aggressive analyst\u2019s structural thesis ultimately carries the day when combined with the Trader\u2019s disciplined scale\u2011in approach.\n\n**The Aggressive Analyst** is correct on the core investment case: PEG 0.59, forward P/E ~15x on 63% net margins, 114% R",
-        "elapsed_sec": 442.9,
-        "prompt_tokens": 1262970,
-        "completion_tokens": 262270,
-        "cost_usd": 0.2503,
-        "llm_calls": 174
-      },
-      {
-        "ticker": "NVDA",
-        "date": "2024-01-30",
-        "decision_raw": "Hold",
-        "decision": "HOLD",
-        "analyst_conclusions": {
-          "market_report": "I now have all the data needed for a comprehensive analysis.",
-          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
-          "news_report": "Now let me compile the analysis report based on the data I've successfully retrieved.",
-          "fundamentals_report": "Excellent!"
-        },
-        "final_reasoning": "**Rating: Hold**\n\n**Synthesis of the Risk Analysts\u2019 Debate**  \nThe debate is genuinely balanced, with each analyst landing compelling points that cannot be fully dismissed.  \n\n**The Aggressive Analyst** correctly identifies the structural bull case: a PEG of 0.59 (forward P/E ~15\u00d7 on 95% EPS growth), $46B in trailing free cash flow, 114% ROE, and an entrenched CUDA ecosystem that serves every major AI lab (Anthropic, OpenAI, Google, Meta). The prediction\u2011market data supports the thesis\u2014the proba",
-        "elapsed_sec": 416.1,
-        "prompt_tokens": 2125417,
-        "completion_tokens": 432084,
-        "cost_usd": 0.4185,
-        "llm_calls": 283
       },
       {
         "ticker": "NVDA",
@@ -5584,6 +4972,330 @@
         "llm_calls": 6111
       },
       {
+        "ticker": "AAPL",
+        "date": "2024-01-26",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 3.",
+          "news_report": "Now I have sufficient data to compile a comprehensive report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Final Trading Decision: Hold**\n\n**Rating:** Hold  \n**Action:** Maintain current position. No addition or reduction. Set tighter tactical guardrails per the Neutral Analyst\u2019s adjustment while preserving long\u2011term exposure.  \n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate is genuinely balanced, and no side delivers a knockout punch that justifies deviating from the Research Manager\u2019s and Trader\u2019s agreed Hold stance.\n\n**The Aggressive Analyst** correctly identifies powerful structur",
+        "elapsed_sec": 408.6,
+        "prompt_tokens": 152974,
+        "completion_tokens": 33575,
+        "cost_usd": 0.0308,
+        "llm_calls": 22
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-01-26",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "Now I have comprehensive data.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
+          "news_report": "Here is my comprehensive research report on the current state of the world relevant for **MSFT (Microsoft Corporation)** trading.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating: Underweight** \u2013 Reduce exposure by 15\u201320% into strength; take partial profits near resistance. Set tiered re-entry zones and a protective stop on the core position.\n\n---\n\n### Executive Summary\n\nThe risk analysts\u2019 debate converges on the need to reduce exposure, but the magnitude divides them. The **Aggressive Analyst** and **Research Manager** both advocate a 15\u201320% trim at $403 resistance with a re-entry target of $370\u2013375. The **Conservative Analyst** demands a 50%+ reduction, citing",
+        "elapsed_sec": 399.1,
+        "prompt_tokens": 313192,
+        "completion_tokens": 68002,
+        "cost_usd": 0.0629,
+        "llm_calls": 45
+      },
+      {
+        "ticker": "NVDA",
+        "date": "2024-01-26",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data needed for a comprehensive analysis.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
+          "news_report": "I now have sufficient data to compile a comprehensive report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "## Final Trading Decision: NVDA\n\n**Rating: Hold**\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate exposes a genuine tension that cannot be resolved with conviction in either direction. **The Aggressive Analyst** correctly identifies the structural bull case: PEG 0.59, $46.3B TTM FCF, 63% net margins, 80\u201390% AI training market share, a widening Golden Cross, and institutional accumulation confirmed by VWMA at $56.57. The forward P/E of ~15x on 95% EPS growth is objectively cheap for a gen",
+        "elapsed_sec": 462.2,
+        "prompt_tokens": 517013,
+        "completion_tokens": 100888,
+        "cost_usd": 0.1006,
+        "llm_calls": 67
+      },
+      {
+        "ticker": "GOOGL",
+        "date": "2024-01-26",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Excellent!",
+          "sentiment_report": "Overall Sentiment:** **Neutral** (Score: 5.",
+          "news_report": "Here is my comprehensive research report.",
+          "fundamentals_report": "I now have all the data I need."
+        },
+        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain current GOOGL position at current sizing (~4% of portfolio). Do not add or trim. The stock is overbought (RSI 76.66, above upper Bollinger band) with a 95% statistical probability of mean reversion within 2\u20133 weeks, and bears have correctly identified deteriorating TTM free cash flow ($27.9B, a 0.68% FCF yield) masked by the $73B FY2024 annual figure. However, prior lessons from 2024-03-15 (+4.6% alpha) and 2024-03-20 (+0.9% alpha) explicitly war",
+        "elapsed_sec": 416.7,
+        "prompt_tokens": 689378,
+        "completion_tokens": 131082,
+        "cost_usd": 0.1332,
+        "llm_calls": 89
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-01-26",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Now I have sufficient data to compile a comprehensive report.",
+          "fundamentals_report": "Here is my comprehensive fundamental analysis report for **AMZN (Amazon."
+        },
+        "final_reasoning": "## Final Trading Decision for AMZN\n\n**Rating: Underweight**\n\n### Executive Summary\n\nReduce the AMZN position by **20%** from current allocation, locking in profits from the 10% rally off the January low. Set a hard stop-loss at **$149.50** (just below the 50\u2011day SMA) on the remaining core stake. Do not initiate new shorts. Prepare to further trim into earnings if the stock trades above $160, and identify a re\u2011entry zone at $135\u2013$140 should a 10\u201315% pullback materialize.\n\nThis decision synthesize",
+        "elapsed_sec": 531.4,
+        "prompt_tokens": 829518,
+        "completion_tokens": 163634,
+        "cost_usd": 0.162,
+        "llm_calls": 112
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-01-29",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
+          "news_report": "Based on the available data from the tools, I'll now compile a comprehensive report.",
+          "fundamentals_report": "I now have comprehensive fundamental data for Apple Inc."
+        },
+        "final_reasoning": "## Final Trading Decision: Underweight\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **15%** over the next 1\u20132 weeks, executing sales into strength at **$192\u2013$195** (Bollinger upper band, December high resistance). Maintain a stop-loss at **$182.50** on the remaining position (just below the 200-day SMA). Set a conditional re-entry limit order at **$180\u2013$185** (50-day SMA / VWMA zone). Do not initiate new long positions above $188. Ahead of the Feb 1 earnings, consider protectiv",
+        "elapsed_sec": 470.5,
+        "prompt_tokens": 973994,
+        "completion_tokens": 197193,
+        "cost_usd": 0.1916,
+        "llm_calls": 133
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-01-29",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Excellent.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
+          "news_report": "Based on the data collected, here is my comprehensive report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: All three risk analysts converge on HOLD despite opposite rationales \u2014 a rare consensus that commands respect. Maintain current MSFT position at market weight. Do not add at $401 (RSI 78.78, 1.15% from upper Bollinger Band, binary earnings catalyst tomorrow); do not sell (93% prediction-market floor above $345, $125B TTM net income, fortress balance sheet with $111B cash vs $60B debt). Set a trailing stop at the 10-EMA ($391) \u2014 if MSFT closes below this l",
+        "elapsed_sec": 386.8,
+        "prompt_tokens": 1109684,
+        "completion_tokens": 230402,
+        "cost_usd": 0.2199,
+        "llm_calls": 152
+      },
+      {
+        "ticker": "NVDA",
+        "date": "2024-01-29",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Neutral** (Score: 5.",
+          "news_report": "Now I have a rich set of prediction market data.",
+          "fundamentals_report": "Now I have all available data."
+        },
+        "final_reasoning": "## Final Trading Decision: NVDA\n\n**Rating: Overweight**\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate exposes a genuine tension between extraordinary fundamentals and stretched near-term technicals. Each analyst makes valid points, but the Aggressive analyst\u2019s structural thesis ultimately carries the day when combined with the Trader\u2019s disciplined scale\u2011in approach.\n\n**The Aggressive Analyst** is correct on the core investment case: PEG 0.59, forward P/E ~15x on 63% net margins, 114% R",
+        "elapsed_sec": 442.9,
+        "prompt_tokens": 1262970,
+        "completion_tokens": 262270,
+        "cost_usd": 0.2503,
+        "llm_calls": 174
+      },
+      {
+        "ticker": "GOOGL",
+        "date": "2024-01-29",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Now I have gathered what data is available.",
+          "fundamentals_report": "Now I have all the data needed for a comprehensive fundamental report."
+        },
+        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain existing GOOGL position at current sizing (3\u20135% of equity exposure). Do not add or trim ahead of tomorrow's Q4 earnings or the pending DOJ antitrust ruling. The 58% rally and RSI at 78 reflect genuine fundamental strength ($69.5B FCF, 23% net income growth) but also an already-executed P/E re-rate from 19x to 26x. The risk/reward is balanced at $152: the business quality justifies holding, but the technical extension (upper Bollinger Band, RSI 78",
+        "elapsed_sec": 431.1,
+        "prompt_tokens": 1426478,
+        "completion_tokens": 294128,
+        "cost_usd": 0.2821,
+        "llm_calls": 195
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-01-29",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data for a thorough analysis.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Now I have sufficient data to compile a comprehensive analysis.",
+          "fundamentals_report": "I have all the data I need."
+        },
+        "final_reasoning": "## Final Trading Decision for AMZN\n\n**Rating: Overweight**\n\n### Executive Summary\n\nMaintain the current AMZN position. **Do not add or trim at current levels ($161.26)**. The stock is technically extended (RSI 70, upper Bollinger Band, 7.4% above the 50\u2011day SMA) and the 31% rally in 8 months has priced in much of the fundamental improvement. However, the structural transformation\u2014$49B free cash flow swing, 82% operating cash flow surge to $85B, AWS/AI infrastructure moat\u2014is audited reality. The",
+        "elapsed_sec": 448.1,
+        "prompt_tokens": 1644402,
+        "completion_tokens": 329448,
+        "cost_usd": 0.3225,
+        "llm_calls": 219
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-01-30",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data needed for a comprehensive analysis.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
+          "news_report": "Now let me compile everything I've gathered into a comprehensive analysis report.",
+          "fundamentals_report": "Now I have comprehensive data."
+        },
+        "final_reasoning": "## Final Trading Decision: Underweight\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **15%** over the next 5\u201310 trading sessions, using any bounce toward the 10 EMA (~$188.66) or 50 SMA (~$188.79) as execution opportunities. Maintain the remaining core position with a hard stop\u2011loss at **$179.86** (200\u2011day SMA). Do not initiate new long positions. Reassess after the Feb 1 earnings print.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate confirms that the bear case car",
+        "elapsed_sec": 558.6,
+        "prompt_tokens": 1791726,
+        "completion_tokens": 363644,
+        "cost_usd": 0.3527,
+        "llm_calls": 240
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-01-30",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "I now have comprehensive data.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
+          "news_report": "Now I have all the data available.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Final Trading Decision: MSFT \u2013 Underweight**\n\n**Rating:** Underweight  \n**Action:** Reduce exposure by 15\u201320% from current position at $400. Set a wider stop-loss at $378 (below the 50 SMA and within the prediction market\u2019s 93% floor). Do not initiate new positions at this level.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate converges on **reducing exposure**, but the magnitude and stop placement divide the analysts. The **Aggressive Analyst** correctly highlights that Microsoft",
+        "elapsed_sec": 455.3,
+        "prompt_tokens": 1952441,
+        "completion_tokens": 399342,
+        "cost_usd": 0.3852,
+        "llm_calls": 260
+      },
+      {
+        "ticker": "NVDA",
+        "date": "2024-01-30",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data needed for a comprehensive analysis.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
+          "news_report": "Now let me compile the analysis report based on the data I've successfully retrieved.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating: Hold**\n\n**Synthesis of the Risk Analysts\u2019 Debate**  \nThe debate is genuinely balanced, with each analyst landing compelling points that cannot be fully dismissed.  \n\n**The Aggressive Analyst** correctly identifies the structural bull case: a PEG of 0.59 (forward P/E ~15\u00d7 on 95% EPS growth), $46B in trailing free cash flow, 114% ROE, and an entrenched CUDA ecosystem that serves every major AI lab (Anthropic, OpenAI, Google, Meta). The prediction\u2011market data supports the thesis\u2014the proba",
+        "elapsed_sec": 416.1,
+        "prompt_tokens": 2125417,
+        "completion_tokens": 432084,
+        "cost_usd": 0.4185,
+        "llm_calls": 283
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-03-01",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "All data collected.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
+          "news_report": "AAPL News & Macro Research Report \u2014 March 1, 2024\n\n**Instrument:** AAPL (Apple Inc.",
+          "fundamentals_report": "Here is the comprehensive fundamental analysis report for **Apple Inc."
+        },
+        "final_reasoning": "**Rating:** Underweight  \n**Action:** Reduce AAPL position by **15\u201320%** over the next 1\u20132 weeks, executing sales into strength at **$180\u2013$182** (the 200\u2011SMA zone). Set a hard stop\u2011loss at **$175.00** on the remaining position (just below the Bollinger lower band). Do not initiate new long positions. Consider hedging a core position with out\u2011of\u2011the\u2011money put spreads expiring mid\u2011March to cover the EU DMA enforcement catalyst. Set a watch for re\u2011entry if the stock retests **$160\u2013$165** on volume",
+        "elapsed_sec": 463.9,
+        "prompt_tokens": 2318648,
+        "completion_tokens": 468523,
+        "cost_usd": 0.4558,
+        "llm_calls": 306
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-03-01",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Now I have sufficient data to compile a comprehensive report.",
+          "fundamentals_report": "Now I have all the data needed to produce a comprehensive fundamental analysis report."
+        },
+        "final_reasoning": "## Final Trading Decision: MSFT \u2013 Overweight\n\n### Rating: **Overweight**  \n**Action:** Initiate a phased accumulation with a limit order at **$388** (50-day SMA confluence) for the first tranche (60% of full intended position). Set stop-loss at **$370**. Remaining 40% to be added on a confirmed breakout above $412 on volume >30M shares.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate centers on whether MSFT\u2019s structural strength (39% net margin, $111B cash, AI distribution moat, 50%",
+        "elapsed_sec": 430.8,
+        "prompt_tokens": 2464023,
+        "completion_tokens": 500126,
+        "cost_usd": 0.485,
+        "llm_calls": 327
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-03-20",
+        "decision_raw": "Buy",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "I now have sufficient data to compile my analysis.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating**: Buy\n\n**Executive Summary**: Initiate a phased Buy in AMZN at current levels (~$178). Deploy an initial 3% of portfolio now to capture the structural earnings inflection (PEG 0.69, FCF swing from \u2212$16.9B to +$32.2B, durable margin expansion to 6.4%). Reserve another 2\u20133% to add on a pullback to the $175.45\u2013$175.95 support zone (10 EMA / VWMA / Bollinger middle band confluence). Set a hard stop at $171.73 (lower Bollinger Band / March 11 low). Take one-third partial profits at $195, re",
+        "elapsed_sec": 386.1,
+        "prompt_tokens": 2601286,
+        "completion_tokens": 528046,
+        "cost_usd": 0.512,
+        "llm_calls": 349
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-03-21",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have comprehensive data.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
+          "news_report": "I now have sufficient data to construct a comprehensive report.",
+          "fundamentals_report": "Excellent \u2014 I have extensive annual data."
+        },
+        "final_reasoning": "## Final Trading Decision: **Hold**\n\n**Rating:** Hold  \n**Action:** Maintain current position. No addition or reduction at the $169.67 level. Implement the tactical risk-management guardrails detailed below.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate crystallizes a genuinely balanced risk/reward profile where neither side delivers a knockout punch. The **Aggressive Analyst** correctly highlights the nascent MACD histogram divergence (+0.59), the 106M\u2011share volume as potential c",
+        "elapsed_sec": 438.6,
+        "prompt_tokens": 2758084,
+        "completion_tokens": 562105,
+        "cost_usd": 0.5435,
+        "llm_calls": 371
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-03-21",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Bullish** (Score: 6.",
+          "news_report": "Now I have sufficient data to compile a comprehensive report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating: Underweight**  \n**Action:** Reduce 15\u201320% of the MSFT position at current levels (~$422). Set a hard stop-loss at $405 (daily close below on volume >20M shares). Do not initiate new longs. Use proceeds to set a limit order to **re-add 5% of original position at $412** (10-EMA) if the stock retraces, creating a tactical swing within the underweight stance.\n\n---\n\n### Synthesis & Final Decision\n\nThe debate is sharply divided, but the **Research Manager\u2019s plan** provides the most rigorous",
+        "elapsed_sec": 469.6,
+        "prompt_tokens": 2927686,
+        "completion_tokens": 599535,
+        "cost_usd": 0.5777,
+        "llm_calls": 394
+      },
+      {
         "ticker": "NVDA",
         "date": "2024-03-21",
         "decision_raw": "Overweight",
@@ -5600,6 +5312,78 @@
         "completion_tokens": 634547,
         "cost_usd": 0.6144,
         "llm_calls": 418
+      },
+      {
+        "ticker": "GOOGL",
+        "date": "2024-03-21",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Based on all available data, here is my comprehensive analysis report.",
+          "fundamentals_report": "Here is the comprehensive fundamental analysis report for **GOOGL (Alphabet Inc."
+        },
+        "final_reasoning": "## Portfolio Manager\u2019s Final Trading Decision\n\n**Rating: Hold**  \n**Ticker: GOOGL**  \n**Position Size:** Maintain current position at benchmark weight (~4\u20135% of equity portfolio).  \n**Stop-Loss:** Raise stop to **$141.50** (just below the 50-day SMA).  \n**Do not add or trim** at current levels.  \n**New entrants:** Wait for either a pullback to the 50-day SMA (~$141.60) or a confirmed breakout above $152 with volume >50M shares.\n\n---\n\n### Executive Summary\n\nThe risk analysts\u2019 debate converges on",
+        "elapsed_sec": 555.1,
+        "prompt_tokens": 3291611,
+        "completion_tokens": 672905,
+        "cost_usd": 0.6492,
+        "llm_calls": 439
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-03-21",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Now I have a solid dataset from prediction markets to work with.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating**: Overweight\n\n**Executive Summary**: Adopt an Overweight strategic stance on AMZN but execute with patience. Do not buy at current levels (~$178) near resistance ($181.42). Deploy capital in two tranches: (1) a 1\u20132% starter position via limit order near the 10-EMA / Bollinger Middle band confluence ($175.63\u2013$176.27) with a tight stop at $171.75 (Bollinger lower band); (2) the remaining 4% at the 50-day SMA ($167.93) or if the MACD histogram turns positive, whichever occurs first. Total",
+        "elapsed_sec": 445.4,
+        "prompt_tokens": 3457403,
+        "completion_tokens": 706277,
+        "cost_usd": 0.6818,
+        "llm_calls": 461
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-03-22",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Neutral** (Score: 5.",
+          "news_report": "Now I have all the data available.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "# Final Trading Decision: AAPL\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **20%** immediately at market. Execute the remainder of the reduction plan (total 15\u201325%) over the next 2\u20133 trading sessions using any bounce toward $171\u2013$173 (10\u2011EMA zone). Set a hard stop\u2011loss at **$164.00** on the remaining core position. If price closes below $164 on above\u2011average volume (>70M shares), reduce an additional **10\u201315%** automatically.\n\n---\n\n## Synthesis of the Risk Analysts\u2019 Debate\n\nTh",
+        "elapsed_sec": 451.7,
+        "prompt_tokens": 3596316,
+        "completion_tokens": 741097,
+        "cost_usd": 0.711,
+        "llm_calls": 481
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-03-22",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "All data is consistent between the tools and the verified snapshot.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Here is the comprehensive news and macroeconomic research report for **MSFT (Microsoft Corporation)**.",
+          "fundamentals_report": "Now I have comprehensive data."
+        },
+        "final_reasoning": "**Rating**: Underweight\n\n**Executive Summary**: Reduce MSFT position by 15-20% at market (~$421) to reflect the Underweight rating. Set a stop-loss at $400 (daily close below on volume >20M shares), confluent with the rising 50-day SMA. Deploy proceeds into cash (SGOV or equivalent) given the 77% probability of no rate cuts. Establish a tiered re-entry plan: limit order to add 5% of original position at $385 and another 5% at $375 (near the 200-day SMA and the prediction market's 93% floor above",
+        "elapsed_sec": 405.3,
+        "prompt_tokens": 3766304,
+        "completion_tokens": 773045,
+        "cost_usd": 0.7437,
+        "llm_calls": 503
       },
       {
         "ticker": "NVDA",
@@ -5620,6 +5404,42 @@
         "llm_calls": 524
       },
       {
+        "ticker": "GOOGL",
+        "date": "2024-03-22",
+        "decision_raw": "Buy",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "Excellent!",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
+          "news_report": "Based on all available data, here is my comprehensive research report.",
+          "fundamentals_report": "Excellent \u2014 I have comprehensive annual data for FY2022 and FY2023 plus a fundamentals snapshot."
+        },
+        "final_reasoning": "**Rating: Buy**  \n**Ticker: GOOGL**  \n**Position Size:** 3.5% of equity portfolio (scale in two tranches)  \n**Entry Plan:**  \n- **Tranche 1 (2.0%):** Initiate at market within the next session (~$149.50) to avoid missing momentum, given the March 18 MACD bullish crossover and 2.4\u00d7 volume accumulation.  \n- **Tranche 2 (1.5%):** Add on a pullback to **$143\u2013$145** (10\u2011day EMA confluence) using a limit order. If no pullback occurs within 10 trading days and the stock closes above **$152** on volume",
+        "elapsed_sec": 419.5,
+        "prompt_tokens": 4116802,
+        "completion_tokens": 845033,
+        "cost_usd": 0.813,
+        "llm_calls": 547
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-03-22",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Now I have a rich dataset to compile into a comprehensive report.",
+          "fundamentals_report": "I now have all available data."
+        },
+        "final_reasoning": "## Final Trading Decision for AMZN\n\n**Rating: Overweight**\n\n### Executive Summary\n\nAdopt an **Overweight** strategic stance on AMZN. The structural transformation\u2014free cash flow swinging from \u2212$16.9B to +$32.2B, operating margins expanding from 2.4% to 13.1% TTM, and durable high\u2011margin growth in AWS, advertising, and AI\u2014is audited and undervalued at 23.6x forward P/E with a PEG of 1.83. Near\u2011term technical warnings (MACD divergence, declining volume, prediction market downside skew) are real bu",
+        "elapsed_sec": 408.2,
+        "prompt_tokens": 4309640,
+        "completion_tokens": 879788,
+        "cost_usd": 0.8497,
+        "llm_calls": 571
+      },
+      {
         "ticker": "NVDA",
         "date": "2024-03-25",
         "decision_raw": "Underweight",
@@ -5636,6 +5456,78 @@
         "completion_tokens": 917014,
         "cost_usd": 0.8856,
         "llm_calls": 593
+      },
+      {
+        "ticker": "GOOGL",
+        "date": "2024-03-25",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Here is my comprehensive news and macroeconomic report for the analysis of **GOOGL (Alphabet Inc.",
+          "fundamentals_report": "Now I have a comprehensive picture."
+        },
+        "final_reasoning": "## Portfolio Manager\u2019s Final Trading Decision\n\n**Rating: Hold**  \n**Ticker: GOOGL**  \n**Position Size:** Maintain current position at neutral weight (~4\u20135% of equity portfolio).  \n**Stop-Loss:** Maintain existing stop at **$141.50** (just below the 50-day SMA).  \n**Do not add or trim** at current levels near $148\u2013$149.  \n**New entrants:** Wait for either a pullback to the 10-day EMA (~$144.68) or a confirmed breakout above $152.43 with volume >50M shares.\n\n---\n\n### Executive Summary\n\nThe risk an",
+        "elapsed_sec": 414.4,
+        "prompt_tokens": 4641814,
+        "completion_tokens": 951347,
+        "cost_usd": 0.9162,
+        "llm_calls": 615
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-03-25",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "All data is verified and consistent.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "I now have sufficient data to compile a comprehensive report.",
+          "fundamentals_report": "Excellent \u2014 I have a wealth of data to analyze."
+        },
+        "final_reasoning": "**Rating**: Overweight\n\n**Executive Summary**: Adopt an Overweight rating on AMZN. Initiate a 50\u201360% allocation (2.5\u20133% of portfolio) via limit orders in the $173\u2013$177 support zone, with a tighter stop at $170 (just below March consolidation lows and above the 50-SMA at $168.93). This improves risk-reward from ~1:1 to ~2:1 on the first tranche. Reserve the remaining 40\u201350% allocation to deploy on either (a) a confirmed breakout above $181.50 with volume >50M shares, or (b) a pullback to the 50-S",
+        "elapsed_sec": 383.3,
+        "prompt_tokens": 4797926,
+        "completion_tokens": 982954,
+        "cost_usd": 0.9469,
+        "llm_calls": 637
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-03-26",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data needed for a thorough analysis.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
+          "news_report": "Here is my comprehensive research report.",
+          "fundamentals_report": "I now have all the fundamental data needed."
+        },
+        "final_reasoning": "## Final Trading Decision: **Underweight**\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **15% immediately at market**. Place a limit order to reduce an additional **5%** at $172 (the 10\u2011EMA / VWMA confluence zone) to reach the upper end of the 15\u201320% reduction range. Set a hard stop\u2011loss on the remaining core position at **$160.00**. Do not initiate new long positions. Consider implementing a collar (sell $180 call, buy $160 put) on the retained exposure to generate premium and",
+        "elapsed_sec": 478.8,
+        "prompt_tokens": 4977085,
+        "completion_tokens": 1020423,
+        "cost_usd": 0.9825,
+        "llm_calls": 659
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-03-26",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Now I have a comprehensive dataset.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain current MSFT position at existing size. Do not add on this pullback \u2014 the bull case relies on too many \"everything goes right\" assumptions about AI monetization timelines, Anthropic not disrupting OpenAI's lead, and FCF stabilization. Do not trim either \u2014 the distribution moat across Office/GitHub/Azure/Windows, $111B net cash position, and 19x forward P/E (well below 28x historical) provide real downside backstops. The review trigger at $402 (50",
+        "elapsed_sec": 437.6,
+        "prompt_tokens": 5125889,
+        "completion_tokens": 1051568,
+        "cost_usd": 1.0121,
+        "llm_calls": 681
       },
       {
         "ticker": "NVDA",
@@ -5656,6 +5548,78 @@
         "llm_calls": 705
       },
       {
+        "ticker": "GOOGL",
+        "date": "2024-03-26",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "I now have sufficient data to compile a comprehensive report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain current GOOGL position at benchmark weight (~4-5% of equity). Do not add or trim at the current $149 level. The 14.7% V-shaped rally in three weeks has pushed the stock near the upper Bollinger Band ($152.86) with RSI surging 32 points \u2014 mean-reversion risk is elevated. The imminent DOJ antitrust ruling is a genuine binary catalyst that could cost $10-15B in operating income if the Apple default deal is lost. However, the underlying business qual",
+        "elapsed_sec": 424.0,
+        "prompt_tokens": 5541649,
+        "completion_tokens": 1119544,
+        "cost_usd": 1.0893,
+        "llm_calls": 729
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-03-26",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "I now have all the verified data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Here is the comprehensive news and macro research report for **AMZN**.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating**: Overweight\n\n**Executive Summary**: Adopt Overweight on AMZN with a calibrated phased entry. Initiate a **1/4 position** (not 1/3) at current levels (~$178) to reflect the MACD bearish divergence risk. Set an initial hard stop at **$170** \u2014 just below the 50-day SMA ($169.40) and 2x ATR \u2014 to cap first-tranche drawdown at ~4.5%. Reserve the second tranche (1/4) for a dip to the **50-day SMA (~$169\u2013170)** and the third tranche (1/4) for a retest of the **200-day SMA (~$145\u2013150)** with a",
+        "elapsed_sec": 342.3,
+        "prompt_tokens": 5702963,
+        "completion_tokens": 1147743,
+        "cost_usd": 1.1198,
+        "llm_calls": 750
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-03-27",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data needed for a comprehensive analysis.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 5.",
+          "news_report": "Now I have sufficient data to compile a comprehensive report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "## Final Trading Decision: **Hold**\n\n**Rating:** Hold  \n**Action:** Maintain current position size. No additions or reductions at this time. Implement the explicit trigger-based guardrails detailed below.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate confirms a genuinely balanced risk/reward \u2013 neither the aggressive bull nor the conservative bear delivers a knockout punch. The Research Manager\u2019s **Hold** conclusion is the correct synthesis, supported by the trader\u2019s identical prop",
+        "elapsed_sec": 446.4,
+        "prompt_tokens": 5888763,
+        "completion_tokens": 1184395,
+        "cost_usd": 1.1561,
+        "llm_calls": 772
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-03-27",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Now I have comprehensive data to compile a thorough report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain current MSFT position at $414 with no additions or reductions. The debate converges unanimously on Hold \u2014 all three analysts, the Research Manager, and the Trader agree the evidence is genuinely balanced. Set a price alert at $395 (4.8% below, confluent with the 50-day SMA at $402.63 and the March 6 low at $395.16) as the primary downside review trigger. Establish a tactical decision point at $409 (Bollinger middle band / VWMA confluence): if MSF",
+        "elapsed_sec": 408.3,
+        "prompt_tokens": 6037511,
+        "completion_tokens": 1216390,
+        "cost_usd": 1.1858,
+        "llm_calls": 793
+      },
+      {
         "ticker": "NVDA",
         "date": "2024-03-27",
         "decision_raw": "Underweight",
@@ -5672,9 +5636,143 @@
         "completion_tokens": 1252141,
         "cost_usd": 1.2223,
         "llm_calls": 815
+      },
+      {
+        "ticker": "GOOGL",
+        "date": "2024-03-27",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Here is my comprehensive news and macro research report for **GOOGL (Alphabet Inc.",
+          "fundamentals_report": "Here is the comprehensive fundamental analysis report for **GOOGL (Alphabet Inc."
+        },
+        "final_reasoning": "**Portfolio Manager\u2019s Final Trading Decision**  \n**Rating: Hold**  \n**Ticker: GOOGL**  \n**Position Size:** Maintain current neutral weight (4\u20135% of equity portfolio).  \n**Stop-Loss:** Keep existing hard stop at **$141.50** (just below the 50-day SMA).  \n**Action:** Do **not** add or trim at current levels (~$149.50).  \n**New Entrants / Additions:**  \n- Set a **GTC limit order** to add 0.2\u00d7 benchmark weight at **$138\u2013$142** (tactical re-entry zone).  \n- Set a **GTC buy-stop order** to add 0.1\u00d7 be",
+        "elapsed_sec": 383.6,
+        "prompt_tokens": 6401706,
+        "completion_tokens": 1287654,
+        "cost_usd": 1.2568,
+        "llm_calls": 840
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-03-27",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data and verified snapshot.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Based on the available data sources, I have compiled the following comprehensive report for `AMZN`.",
+          "fundamentals_report": "Here is my comprehensive fundamental analysis report for **AMZN (Amazon."
+        },
+        "final_reasoning": "**Rating**: Hold\n\n**Executive Summary**: Maintain AMZN at benchmark weight \u2014 no new entry, no reduction. The long-term structural thesis ($85B operating cash flow, $49B FCF turnaround, 20%+ ad growth, AWS AI re-acceleration) remains intact and supports full exposure as a core holding. However, the near-term tactical setup is unfavorable: MACD histogram collapsed from +4.41 to -0.10 with declining volume (33M vs 72M), the risk-reward at $180 is a poor 1.4:1, and the 77% probability of no rate cut",
+        "elapsed_sec": 323.8,
+        "prompt_tokens": 6547035,
+        "completion_tokens": 1317609,
+        "cost_usd": 1.2855,
+        "llm_calls": 861
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-03-28",
+        "decision_raw": "Underweight",
+        "decision": "SELL",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Mixed** (Score: 4.",
+          "news_report": "Now I have sufficient data to compile the report.",
+          "fundamentals_report": "I now have comprehensive annual data for Apple Inc."
+        },
+        "final_reasoning": "## Final Trading Decision: **Underweight**\n\n**Rating:** Underweight  \n**Action:** Reduce AAPL position by **20%** into strength at $172\u2013$174 (10\u2011EMA / VWMA resistance zone). Set a hard stop\u2011loss on the remaining position at **$165.00** (just below the March support and Bollinger lower band). Do not initiate new long positions. If currently flat, stay in cash.\n\n---\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nThe debate confirms that the bear case carries greater near\u2011term weight, but the structu",
+        "elapsed_sec": 433.0,
+        "prompt_tokens": 6731664,
+        "completion_tokens": 1354577,
+        "cost_usd": 1.3217,
+        "llm_calls": 886
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-03-28",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data needed.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Now I have comprehensive data to compile the report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Rating**: Overweight\n\n**Executive Summary**: Initiate a phased MSFT position at current levels (~$413), starting with 40\u201350% of target allocation immediately. Set a mental stop-loss at $403 (just below the 50-day SMA) on the first tranche to limit downside to ~2.5%. Reserve 30% of capital for a potential dip to the $400\u2013403 support zone (50 SMA/Bollinger middle band confluence), and hold 20\u201330% for a confirmed breakout above $414 on volume. Total exposure not to exceed 5% of portfolio. Time ho",
+        "elapsed_sec": 390.4,
+        "prompt_tokens": 6879112,
+        "completion_tokens": 1388304,
+        "cost_usd": 1.3518,
+        "llm_calls": 905
+      },
+      {
+        "ticker": "NVDA",
+        "date": "2024-03-28",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "I now have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Here is my comprehensive analysis report:\n\n---\n\n# NVDA (NVIDIA Corporation) \u2014 News & Macro Research Report\n**Analysis Date:** 2024-03-28  \n**Sector:** Technology / Semiconductors  \n**Exchange:** NMS\n\n---\n\n## 1.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "## Final Trading Decision: NVDA\n\n**Rating: Hold**\n\n### Synthesis of the Risk Analysts\u2019 Debate\n\nEach analyst makes valid points, but the evidence supports maintaining the current position with disciplined risk management, not aggressive action.\n\n**The Aggressive Analyst** correctly identifies the secular strength: 126% revenue growth, 72.7% gross margins, $27B FCF, CUDA ecosystem moat, and a PEG of 0.59. The dismissal of the MACD/RSI signals as \u201chealthy consolidation\u201d is, however, contradicted by",
+        "elapsed_sec": 469.1,
+        "prompt_tokens": 7085506,
+        "completion_tokens": 1429329,
+        "cost_usd": 1.3922,
+        "llm_calls": 929
+      },
+      {
+        "ticker": "GOOGL",
+        "date": "2024-03-28",
+        "decision_raw": "Hold",
+        "decision": "HOLD",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 5.",
+          "news_report": "Here is my comprehensive research report.",
+          "fundamentals_report": "Excellent!"
+        },
+        "final_reasoning": "**Portfolio Manager\u2019s Final Trading Decision**  \n**Rating: Hold**  \n**Ticker: GOOGL**  \n**Position Size:** Maintain current neutral weight (4\u20135% of equity portfolio).  \n**Stop-Loss:** Maintain existing hard stop at **$141.50** (just below the 50-day SMA ~$142.46).  \n**Action:** Do **not** add or trim at current levels (~$149\u2013$150).  \n**New Entrants / Additions:**  \n- Set a **GTC limit order** to add 0.2\u00d7 benchmark weight at **$138\u2013$142** (tactical re-entry zone near the 50-day SMA).  \n- Set a **",
+        "elapsed_sec": 416.1,
+        "prompt_tokens": 7280517,
+        "completion_tokens": 1464483,
+        "cost_usd": 1.4293,
+        "llm_calls": 952
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2024-03-28",
+        "decision_raw": "Overweight",
+        "decision": "BUY",
+        "analyst_conclusions": {
+          "market_report": "Now I have all the data I need.",
+          "sentiment_report": "Overall Sentiment:** **Mildly Bullish** (Score: 6.",
+          "news_report": "Here is my comprehensive analysis report.",
+          "fundamentals_report": "I now have comprehensive data."
+        },
+        "final_reasoning": "**Rating**: Overweight\n\n**Executive Summary**: Adopt an **Overweight** rating on AMZN with a staged entry strategy. Execute a two-tranche buy: first 8\u201310% of intended allocation via limit order in the **$176\u2013$178** dip zone, and a second 8\u201310% via limit order at **$170\u2013$172** (50-day SMA and lower Bollinger Band confluence). Total position: **15\u201320% of full conviction** (per trader's plan), with a hard stop at **$160** on the combined position. Time horizon: **12\u201318 months**; price target **$210",
+        "elapsed_sec": 399.8,
+        "prompt_tokens": 7455397,
+        "completion_tokens": 1497029,
+        "cost_usd": 1.4629,
+        "llm_calls": 973
       }
     ],
     "framework": "TradingAgents v0.3.0 (TauricResearch/TradingAgents)",
+    "llm_config": {
+      "llm_provider": "deepseek",
+      "deep_think_llm": "deepseek-v4-flash",
+      "quick_think_llm": "deepseek-v4-flash",
+      "memory_log_path": "/mnt/beegfs/xqinag/ARIS-project/arena/adapters/tradingagents/.state/memory/trading_memory.md",
+      "data_cache_dir": "/mnt/beegfs/xqinag/ARIS-project/arena/adapters/tradingagents/.state/cache",
+      "results_dir": "/mnt/beegfs/xqinag/ARIS-project/arena/adapters/tradingagents/.state/logs"
+    },
     "tickers": [
       "AAPL",
       "MSFT",
@@ -5684,10 +5782,9 @@
     ],
     "test_start": "2024-01-01",
     "test_end": "2024-03-31",
-    "total_pairs": 315,
-    "total_llm_calls": 869752,
-    "total_tokens": 61740000,
-    "total_cost_usd": 10.19
+    "total_llm_calls": 874397,
+    "total_tokens": 8952426,
+    "total_cost_usd": 1.4629
   },
   "extracted": {
     "action": null,
@@ -5700,31 +5797,31 @@
       "AAPL": {
         "BUY": 2,
         "HOLD": 21,
-        "SELL": 40
+        "SELL": 41
       },
       "MSFT": {
-        "BUY": 10,
+        "BUY": 11,
         "HOLD": 39,
         "SELL": 14
       },
       "NVDA": {
         "BUY": 26,
-        "HOLD": 28,
+        "HOLD": 29,
         "SELL": 9
       },
       "GOOGL": {
         "BUY": 18,
-        "HOLD": 32,
+        "HOLD": 33,
         "SELL": 13
       },
       "AMZN": {
-        "BUY": 29,
+        "BUY": 30,
         "HOLD": 20,
         "SELL": 14
       }
     }
   },
-  "cost_usd": 10.19,
-  "latency_sec": null,
-  "adapter_notes": "TradingAgents full run: 315 (ticker,date) pairs (305 NYSE trading days + 10 holiday dates from original Mon-Fri batch), all DeepSeek-flash, ~18 LLM calls per pair."
+  "cost_usd": 1.4629,
+  "latency_sec": 19081.5,
+  "adapter_notes": "TradingAgents runs 18 LLM calls per (ticker, date) through a multi-analyst debate pipeline (market, sentiment, news, fundamentals + two debate rounds + portfolio manager). Decision vocabulary is Overweight/Hold/Underweight (portfolio-manager style), mapped to BUY/HOLD/SELL in the extracted field. native_output.decisions contains per-analyst conclusion sentences and final reasoning (first 500 chars). Full raw state is NOT stored to keep cost/size manageable. Decisions use all DeepSeek-flash to stay within $10-15 budget."
 }

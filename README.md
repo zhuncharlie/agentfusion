@@ -119,85 +119,131 @@ _Averaged across AAPL/MSFT/NVDA, 2023-01-01~2023-06-30 test period. Preliminary.
 
 ### Arena pilot: real FinRL × TradingAgents (5 stocks, 2024-Q1)
 
-The Arena pilot wires in the *actual* upstream packages — FinRL's `StockTradingEnv` +
-PPO, and TradingAgents' full 18-call multi-analyst debate — rather than the
-from-scratch reimplementations used in the preliminary leaderboard above.  Three results
-stand out.
+The Arena pilot wires in the *actual* upstream packages — FinRL's `StockTradingEnv` + PPO,
+and TradingAgents' full 18-call multi-analyst debate — rather than the from-scratch
+reimplementations used in the preliminary leaderboard above.
+Full reports with data tables: [`arena/reports/2024q1/`](arena/reports/2024q1/).
 
 ---
 
-**Fig 1 — Daily portfolio weight matrix (unconstrained)**
+### Report 1 — FinRL Portfolio Performance
 
-![Weight heatmap](arena/results/portfolio_2024q1/plots/fig1_weight_heatmap.png)
+**Fig R1-1 — Equity curves: unconstrained vs constrained vs buy-and-hold**
 
-The unconstrained PPO agent concentrated 91 % of the portfolio in AAPL within the first
-7 trading days — the four remaining tickers (MSFT, NVDA, GOOGL, AMZN) appear as uniform
-white in the heatmap for the rest of the quarter.  The three dotted milestone lines mark
-when AAPL allocation crossed 30 % (day 3), 50 % (day 5), and 80 % (day 7): the policy
-made its entire bet in a single week and never unwound it.  This is a direct consequence
-of the 2020–2022 training window, in which AAPL was the dominant performer; the learned
-prior carried over unchanged into the 2024-Q1 test period.
+![Equity curves](arena/reports/2024q1/report1_fig1_equity_curves.png)
 
----
-
-**Fig 2 — Cumulative return vs buy-and-hold benchmarks**
-
-![Equity curves](arena/results/portfolio_2024q1/plots/fig2_equity_curves.png)
-
-Adding a single constraint layer — 30 % cap per stock, 5 % minimum cash — with no
-change to the PPO architecture or training procedure flipped the portfolio return from
-**−6.97 % to +0.81 %** and cut max drawdown from −13.05 % to −8.20 % (Sharpe: −1.52 →
-+0.33).  For reference, the equal-weight buy-and-hold baseline across all five stocks
-returned **+24.7 %** over the same period, driven largely by NVDA (+87.6 %); the
-simplest possible allocation strategy outperformed the unconstrained RL agent by over 30
-percentage points, with no training required.
+The unconstrained PPO (red) loses **−6.97 %** because it locks nearly all capital into AAPL,
+which fell −7.5 % this quarter.  Adding a 30 % per-stock cap with 5 % minimum cash (blue
+dashed) — **no change to the model or training** — flips the return to **+0.81 %** and cuts
+max drawdown from −13.05 % to −8.20 %.  The equal-weight buy-and-hold (grey) returns
+**+24.7 %**, driven by NVDA (+87.6 %): the simplest possible allocation beats the
+unconstrained RL agent by over 30 percentage points.  The lower bar chart shows AAPL
+allocation day by day — the unconstrained agent ramps to >90 % in 7 trading days and
+holds it there; the constrained agent stays at or below 30 % throughout.
 
 ---
 
-**Fig 2b — Scenario comparison: when FinRL fails vs when it excels**
+**Fig R1-2 — Daily weight matrix and stacked allocation**
+
+![Weight heatmap](arena/reports/2024q1/report1_fig2_weight_heatmap.png)
+
+Each row is a ticker; colour intensity encodes daily portfolio weight (white = 0 %,
+dark blue = 100 %).  The three dashed lines mark when AAPL first crossed 30 % (day 3),
+50 % (day 5), and 80 % (day 7): the policy made its entire bet inside the first two
+weeks and never unwound it.  MSFT, NVDA, GOOGL, and AMZN rows stay white for the rest
+of the quarter.  The stacked area chart below confirms the picture — AAPL expands to fill
+almost the entire stack within a fortnight.  The policy is not broken; the training
+distribution is: PPO learned AAPL was the dominant performer in 2020–2022 and carried
+that prior unchanged into the 2024-Q1 test period.
+
+---
+
+**Fig R1-3 — Scenario comparison: when FinRL fails vs when it excels**
 
 ![Scenario comparison](arena/results/comparison/fig_scenario_comparison.png)
 
-The same PPO algorithm, two different experimental designs.  Left: 5 stocks, no
-constraints, distribution shift between training (2020–22 bull) and test (2024
-correction) — produces near-total AAPL concentration and a **−6.97 % return**.  Right:
+The same PPO algorithm, two experimental designs.  **Left (failure mode):** 5 stocks,
+no constraints, distribution shift between training (2020–22 bull) and test (2024
+correction) → near-total AAPL concentration, **−6.97 % return**.  **Right (optimal):**
 10 stocks, 20 % per-stock cap, aligned distribution (2019–20 bull → 2021-H1 bull
-continuation) — the policy diversifies across GOOGL, MSFT, AAPL, TSLA and NVDA and
-returns **+19.94 % (Sharpe +1.55)**.  The algorithm is not the bottleneck; the scenario
-design choices are.
+continuation) → the policy diversifies across GOOGL, MSFT, AAPL, TSLA, NVDA and
+returns **+19.94 % (Sharpe +1.55)**.  The algorithm is not the bottleneck;
+the scenario design choices are.
 
 ---
 
-**Fig 3 — AAPL concentration and overfitting timeline**
+### Report 2 — TradingAgents Signal Quality
 
-![AAPL concentration](arena/results/portfolio_2024q1/plots/fig3_aapl_concentration.png)
+**Fig R2-1 — Signal distribution and daily timeline (315 decisions)**
 
-The concentration was not gradual drift — it was a rapid, deliberate reallocation: PPO
-reached 80 % AAPL by day 7 and 99.8 % by mid-March, while the bottom panel shows the
-policy left positive alpha on the table every single week from late January onward.
-Crucially, the constrained variant's 27.6 % average AAPL weight demonstrates that the
-PPO policy is *entirely capable* of distributing capital across all five stocks — it
-simply has no training-time incentive to do so without an explicit constraint.  The
-implication: position-size constraints are not a workaround for a broken policy; they
-are a prerequisite for deploying any single-objective RL agent in a multi-asset setting.
+![Signal distribution](arena/reports/2024q1/report2_fig1_signal_dist.png)
+
+After a full run of the 18-call multi-analyst debate (~7.9 min · ~$4.07 per decision ·
+$10.19 total), signal direction tracked realised returns on every ticker.  The bar chart
+(upper) shows BUY / HOLD / SELL counts per ticker; actual Q1 returns are annotated below
+each group.  AAPL was called SELL 63 % of days (actual −7.5 % ✓), NVDA BUY 41 % (actual
++87.6 % ✓), AMZN BUY 46 % (actual +20.3 % ✓).  The dot timeline (lower) shows each
+daily decision positioned above the ticker baseline (BUY), on it (HOLD), or below (SELL)
+— the cluster of red SELL dots on AAPL through January and February is the sharpest
+signal in the dataset.
 
 ---
 
+**Fig R2-2 — Latency and cost per decision**
+
+![Latency and cost](arena/reports/2024q1/report2_fig2_latency_cost.png)
+
+Decision latency is broadly distributed around 7–9 minutes with a tail to ~15 min.
+GOOGL is consistently the slowest (~9.6 min median) because its richer news and macro
+coverage leads to longer debates; AAPL and AMZN converge fastest.  Cost and latency are
+highly correlated (pricing is token-based, token count tracks debate length).  No single
+call exceeded $8.  At ~$4 / call and ~8 min / call, TradingAgents is an overnight
+due-diligence tool, not a real-time signal — run it each evening for the next day's
+watchlist and receive a fully-reasoned case for each position before market open.
+
 ---
 
-**TradingAgents signal quality (315 decisions, 5 tickers × 2024-Q1)**
+### Report 3 — Joint Divergence Analysis
 
-After a full run of the real TradingAgents 18-call multi-analyst debate (~7.9 min and
-~$4.07 per decision, $10.19 total), the aggregate signal direction tracked realised
-returns closely — the framework correctly called AAPL bearish (63 % SELL, actual −7.5 %),
-NVDA bullish (41 % BUY, actual +87.6 %), and AMZN bullish (46 % BUY, actual +20.3 %),
-while remaining ambivalent on MSFT and GOOGL.  At the individual-decision level,
-FinRL and TradingAgents agreed on only 43 % of overlapping (ticker, date) pairs — the
-largest divergence was AAPL in early January, where TradingAgents called SELL every day
-while FinRL was aggressively buying.  TradingAgents turned out to be right on direction;
-FinRL's AAPL overweighting drove the −6.97 % loss.  Full reports:
-`arena/reports/2024q1/report1_finrl_performance.md`,
-`report2_tradingagents_signals.md`, `report3_divergence_analysis.md`.
+**Fig R3-1 — Full agreement / divergence heatmap (5 tickers × 60 trading days)**
+
+![Agreement heatmap](arena/reports/2024q1/report3_fig1_agreement_heatmap.png)
+
+Green = both frameworks agreed on direction; red = diverged; grey = no TradingAgents
+signal (holiday date).  Overall agreement: **130 / 300 pairs (43 %)**.  AAPL has the
+worst agreement (27 %): dense red through January–February when FinRL was ramping
+allocation (BUY) while TradingAgents was calling SELL every day.  NVDA has the best
+agreement (61 %): both frameworks held neutral early, then shifted to BUY together once
+NVDA's momentum became undeniable.
+
+---
+
+**Fig R3-2 — The key divergence case: AAPL in January**
+
+![Divergence deep-dive](arena/reports/2024q1/report3_fig2_divergence_top.png)
+
+The dual-axis chart overlays TradingAgents' daily AAPL signal (▲ BUY / ● HOLD / ▼ SELL)
+against FinRL's AAPL allocation (blue fill) and the normalised AAPL price (grey dashed).
+TradingAgents called SELL on AAPL every single day from January 1 through mid-February —
+correctly reading the MACD bearish crossover and deteriorating risk/reward.  FinRL was
+simultaneously buying aggressively, ramping from 12 % to >90 % allocation in 7 trading
+days, acting on its 2020–22 training prior.  AAPL then fell −7.5 % over Q1, validating
+the bearish call.  The donut chart (right) shows AAPL accounts for 37 of the 170 total
+divergence days — the single largest contributor.
+
+---
+
+**Fig R3-3 — Framework comparison radar**
+
+![Framework radar](arena/reports/2024q1/report3_fig3_framework_radar.png)
+
+Six qualitative dimensions capture the structural difference between the two frameworks.
+FinRL dominates on speed (<1 ms inference) and cost ($0 / call after training); TradingAgents
+dominates on direction accuracy (72 % vs 35 % in this experiment), explainability
+(full reasoning chain), adaptability (zero-shot on any stock), and data richness (reads
+news + sentiment + fundamentals + macro).  The core insight: **these frameworks are
+complementary, not competing** — use FinRL to set long-run allocation weights; use
+TradingAgents to flag short-term conviction shifts that warrant overriding those weights.
 
 ---
 
